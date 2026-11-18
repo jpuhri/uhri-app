@@ -2,59 +2,1638 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UHRI Home Inspection App - TREC Compliant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UHRI Universal - BUILD 48 - PDF OUTLINE + PHOTO OPTION - ALL STATES & COUNTRIES - BEST ONE - Categories Sub Categories - Save Email Works</title>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;max-width:900px;margin:0 auto;padding:20px;line-height:1.6;background:#e8e6e0;color:#0a1931}
-.hero{background:#0a1931;color:#FFD500;padding:40px 20px;border-radius:16px;text-align:center;border:4px solid #FFD500}
-.hero h1{margin:0;font-size:32px}
-.hero p{font-size:18px;color:#fff}
-.btn{display:inline-block;background:#FFD500;color:#000;padding:14px 28px;border-radius:10px;font-weight:900;text-decoration:none;margin:10px}
-.card{background:#fff;border-radius:12px;padding:20px;margin:20px 0;border:2px solid #0a1931}
-h2{color:#0a1931;border-bottom:3px solid #FFD500;padding-bottom:8px}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#e8e6e0;padding:0}
+.top-bar{position:sticky;top:0;left:0;right:0;z-index:10001;background:#0a1931;color:white;display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-bottom:3px solid #FFD500;padding-top:calc(8px + env(safe-area-inset-top));min-height:65px;flex-wrap:wrap}
+.top-bar-left{font-weight:900;line-height:1.1;font-size:13px;flex:1;min-width:140px}
+.top-bar-left small{font-weight:400;font-size:9px;opacity:.8;display:block}
+.btn-group{display:flex;gap:5px;flex-wrap:nowrap;flex-shrink:0}
+.btn-group button{border-radius:18px;border:1px solid #000;padding:8px 11px;font-weight:800;font-size:11px;cursor:pointer;white-space:nowrap}
+.btn-preview{background:#fff}.btn-share{background:#fff}.btn-save{background:#FFD500;border-color:#FFD500!important}
+#appContent{margin-top:10px;padding:10px;padding-bottom:20px}
+.agreement-wrapper{margin-bottom:12px}
+.agreement-card{background:#fff;border-radius:14px;border:2px solid #0a1931;overflow:visible;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.agreement-header{background:#0a1931;color:#FFD500;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;border-radius:12px 12px 0 0}
+.agreement-header h2{margin:0;font-size:12px}
+.badge-required{background:#ff2d2d;color:white;font-size:9px;padding:3px 7px;border-radius:10px;margin-left:8px}
+.header-actions{display:flex;gap:8px}
+.header-actions button{background:#FFD500;color:#000;border:none;border-radius:8px;padding:6px 10px;font-weight:800;font-size:11px;cursor:pointer}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
+.form-grid label{font-size:11px;font-weight:700;color:#0a1931;display:block;margin-bottom:4px}
+.form-grid input,.form-grid select{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;font-size:14px}
+.terms-box{margin:10px 12px;border:2px solid #FFD500;border-radius:10px;max-height:220px;overflow-y:auto;padding:10px;background:#fffdf0;font-size:11px}
+.readable-btn{margin:10px 12px 0 12px;width:calc(100% - 24px);background:#FFD500;color:#000;border:2px solid #0a1931;border-radius:10px;padding:12px;font-weight:900;font-size:14px;cursor:pointer;text-align:center;}
+.readable-modal{position:fixed;top:0;left:0;right:0;bottom:0;z-index:30000;background:#fff;display:none;overflow-y:auto;padding:0;}
+.readable-modal.show{display:block;}
+.readable-modal-header{position:sticky;top:0;background:#0a1931;color:#FFD500;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;z-index:1;}
+.readable-modal-header h2{margin:0;font-size:16px;}
+.readable-modal-body{padding:20px;font-size:18px;line-height:1.7;color:#111;max-width:800px;margin:0 auto;}
+.readable-modal-body strong{color:#0a1931;}
+.readable-modal-footer{position:sticky;bottom:0;background:#fff;border-top:3px solid #0a1931;padding:12px;display:flex;gap:8px;flex-wrap:wrap;}
+.readable-modal-footer button{flex:1;padding:14px;border-radius:10px;font-weight:900;font-size:14px;cursor:pointer;min-height:48px;}
+.checks{padding:10px 12px;display:flex;flex-direction:column;gap:10px;background:#f7f7f5;border-top:1px solid #ddd}
+.check-row{display:flex;gap:10px;align-items:flex-start;font-size:12px;background:#fff;border:1px solid #ddd;padding:10px;border-radius:8px}
+.check-row input{margin-top:2px;width:18px;height:18px}
+.action-bar{padding:12px;display:flex;gap:10px;position:sticky;bottom:0;background:white;border-top:3px solid #0a1931;z-index:9999;box-shadow:0 -4px 20px rgba(0,0,0,.25);margin-top:20px}
+.btn-sign{flex:1;background:#0a1931;color:#FFD500;border:none;padding:18px;border-radius:12px;font-weight:900;font-size:16px;cursor:pointer}
+.btn-minimize{flex:0.4;background:#fff;color:#0a1931;border:2px solid #0a1931;padding:18px;border-radius:12px;font-weight:800;cursor:pointer}
+.minimized-bar{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9998;background:#0a1931;color:#FFD500;padding:10px 18px;border-radius:30px;display:none;box-shadow:0 4px 12px rgba(0,0,0,.3);font-weight:800;font-size:12px;cursor:pointer;border:2px solid #FFD500}
+.inspection-section{background:#fff;border-radius:12px;padding:14px;margin-bottom:12px;border:1px solid #ccc;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.inspection-section h3{margin:0 0 10px 0;color:#0a1931;font-size:14px;border-bottom:2px solid #FFD500;padding-bottom:6px}
+.room-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:500px){.room-grid{grid-template-columns:1fr}}
+.room-btn{background:#f7f7f5;border:2px solid #0a1931;border-radius:10px;padding:14px;font-weight:800;text-align:center;cursor:pointer}
+.room-btn:hover{background:#FFD500}
+.trec-item{background:#fff;border:1px solid #ddd;border-radius:10px;padding:10px;margin-bottom:10px}
+.trec-item label{font-size:12px;font-weight:700;color:#0a1931;display:block;margin-bottom:6px}
+.trec-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.trec-row select{flex:0 0 110px;padding:8px;border-radius:6px;border:1px solid #999;font-weight:800;font-size:12px}
+.trec-row input[type="text"]{flex:1;padding:8px;border-radius:6px;border:1px solid #ccc;font-size:13px;min-width:120px}
+.trec-comment{width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;font-size:12px;margin-top:6px;min-height:50px}
+#reportModal{position:fixed;top:0;left:0;right:0;bottom:0;z-index:20000;background:rgba(0,0,0,0.88);display:none;overflow-y:auto;padding:12px;}
+#reportModalInner{background:#fff;border-radius:12px;padding:18px;max-width:800px;margin:10px auto;min-height:85vh;}
+#saveToast{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:20001;background:#0a1931;color:#FFD500;padding:20px 30px;border-radius:12px;font-weight:900;display:none;box-shadow:0 8px 24px rgba(0,0,0,0.5);border:3px solid #FFD500;text-align:center;min-width:300px;font-size:14px;}
+@media(max-width:600px){.top-bar{flex-direction:column;align-items:stretch;gap:6px}.btn-group{width:100%;justify-content:space-between}.btn-group button{flex:1;font-size:10px;padding:9px 4px}}
+
+.photo-row{display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap}
+.photo-btn{background:#0a1931;color:#FFD500;border:none;border-radius:10px;padding:16px 24px;font-weight:900;font-size:15px;cursor:pointer;min-height:48px;min-width:100px;touch-action:manipulation;box-shadow:0 2px 4px rgba(0,0,0,0.2)}
+.photo-preview{max-width:80px;max-height:60px;border:1px solid #ccc;border-radius:6px;display:none;cursor:pointer}
+.photo-preview.has-photo{display:block}
+.photo-count{font-size:10px;color:#0a1931;font-weight:700;margin-left:4px}
+
+
+@media (min-width: 768px) {
+  body { font-size: 18px !important; }
+  #appContent { padding: 16px !important; max-width: 1200px !important; margin: 0 auto !important; }
+  .top-bar { min-height: 90px !important; padding: 16px 20px !important; }
+  .room-btn { padding: 24px !important; font-size: 18px !important; min-height: 80px !important; }
+  .photo-btn { padding: 20px 32px !important; font-size: 18px !important; min-height: 60px !important; }
+}
+@media (min-width: 1024px) {
+  #appContent { max-width: 1300px !important; }
+  .room-grid { grid-template-columns: 1fr 1fr 1fr !important; }
+  .room-btn { padding: 28px !important; font-size: 20px !important; min-height: 90px !important; }
+}
+
 </style>
 </head>
 <body>
-<div class="hero">
-<h1>UHRI Home Buyers Inspection Service</h1>
-<p>Professional Home Inspection App - TREC Compliant for Texas Inspectors</p>
-<a href="https://apps.apple.com" class="btn">📱 Download on App Store (Coming Soon)</a>
+<div class="top-bar">
+  <div class="top-bar-left"><div style="display:flex;align-items:center;gap:8px;"><img id="topLogo" src="" style="width:32px;height:32px;border-radius:6px;background:#FFD500;display:none;object-fit:contain;"><div><span id="topCompanyName">YOUR COMPANY</span><br><small id="topSub">UNIVERSAL - ANY STATE / ANY COUNTRY</small><br><small id="topPhone">Set up in ⚙️ Company</small></div></div></div>
+  <div class="btn-group">
+    <button class="btn-preview" onclick="toggleInstructions()" style="background:#FFD500;border:2px solid #000">📖 Instructions</button>
+    <button class="btn-preview" onclick="toggleCompanySettings()" style="background:#e0e0e0">⚙️ Company</button>
+    <button class="btn-preview" onclick="previewReport()">↗ Preview</button>
+    <button class="btn-save" onclick="saveReport()">💾 SAVE</button>
+  </div>
 </div>
 
-<div class="card">
-<h2>Professional Home Inspection App</h2>
-<p><strong>UHRI Home Inspection App</strong> - Built for professional inspectors in Texas and across the USA. Universal - Any State / Any Country.</p>
-<ul>
-<li>✅ TREC Compliant - I / NI / NP / D Reporting</li>
-<li>✅ 18 Sections - 170+ Items - Doors, Windows, Lights, Electrical, Plumbing</li>
-<li>✅ Separate Fields: Toilets, Sinks, Countertops, Cabinets, Shower/Tub</li>
-<li>✅ Photos - Native Camera, Compressed Storage</li>
-<li>✅ Conditions: Appeared to operate normally, Good condition, Tested faulty, Flawed</li>
-<li>✅ Pre-Inspection Agreement - Signature</li>
-<li>✅ Save, Preview, Email Report, Print PDF</li>
-<li>✅ Local Storage Only - No Cloud, No Tracking</li>
-</ul>
+<div id="appContent">
+  <div class="inspection-section" id="instructionsPanel" style="display:none;border:3px solid #0a1931;background:#fffbe6;max-height:80vh;overflow-y:auto;">
+    <h3>🌎 UHRI UNIVERSAL - HOW TO USE - KEEPER VERSION</h3>
+    <div style="font-size:13px;line-height:1.7;padding:6px;">
+      <div style="background:#e0f7ff;border:2px solid #0a1931;border-radius:8px;padding:12px;margin-bottom:10px;">
+        <strong>1. SET UP COMPANY (Once):</strong><br>
+        Tap ⚙️ Company → Name, Phone, Email, License, Inspector, State (50 states), Country (200+), Standard (TREC / ASHI / InterNACHI / Generic). Upload Logo — Shows on top + reports.<br><br>
+        <strong>2. START INSPECTION:</strong><br>
+        Fill Client + Property + Fee. Read Pre-Inspection Agreement.<br>
+        • Tap <b>📖 Read Full Agreement — Expand</b> for large, easy-to-read version. Tap <b>⬅ Back to Agreement</b> to go back, or <b>📋 Return to Report</b> to skip to inspection.<br>
+        • Tap <b>Later</b> to skip agreement for now, or <b>✅ SIGN &amp; START</b> to sign (type name + date).<br><br>
+        <strong>3. FILL EACH AREA — 20 Sections:</strong><br>
+        Tap a section — e.g. <b>1. EXTERIOR - ROOF</b> — Fill each item:<br>
+        • <b>I/NI/NP/D:</b> I = Inspected, NI = Not Inspected, NP = Not Present, D = Deficient<br>
+        • <b>Type ↓:</b> If you see Type — Pick type. Example: Water Heater → Gas / Electric / Tank / Tankless. HVAC → Central / Heat Pump / Furnace / Mini Split / Ductless Mini Split. Roof → Composition Shingle / Tile / Metal / Flat.<br>
+        • <b>Condition ↓:</b> Pick condition. Example: Appeared in good condition, Appeared to operate normally, Appeared in fair / poor condition, Deficient, Needs Repair, Safety Issue, Monitor.<br>
+        • <b>Value:</b> Type size / number / measurement. Example: Main Breaker Size → 200 Amp. Number of Breakers → 24.<br>
+        • <b>Windows:</b> Pick Type — Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture — Then in Value type <b>How many windows? — e.g. 3</b>.<br>
+        • <b>📷 Photo:</b> Take / pick photo for that item.<br>
+        • <b>Comment:</b> Type notes.<br>
+        • Everything auto-saves as you type.<br><br>
+        <strong>4. NEXT BUTTON — Go to next area:</strong><br>
+        At the bottom of each area, tap <b>Next → Next Area ➡️</b> — Saves this area and opens the next one. Tap <b>⬅ Prev</b> to go back one area. On last area, Next becomes <b>✅ Done — Back to All Sections</b>.<br><br>
+        <strong>5. ELECTRICAL — PANELS:</strong><br>
+        • <b>Main Disconnect - Main Breaker Size:</b> Type main breaker size — e.g. 200 Amp.<br>
+        • <b>Main Panel - Number of Breakers:</b> Type how many breakers total.<br>
+        • <b>Main Panel - Breaker Count Table:</b> Type how many of each size — 15 Amp, 20 Amp, 30 Amp, 40 Amp, 50 Amp, 60 Amp, 100 Amp. Total updates automatically.<br>
+        • <b>Sub Panel(s) - Breaker Count Table:</b> Same for sub panel(s) — 15 Amp to 60 Amp.<br><br>
+        <strong>6. SAVE / PREVIEW / SEND:</strong><br>
+        • Tap <b>💾 SAVE</b> top right — Shows SAVED! popup.<br>
+        • Tap <b>↗ Preview</b> — Shows report inside app.<br>
+        • In Preview → <b>📧 Email Report</b> to open Mail, or <b>🖨️ Print / PDF</b> to print / Save as PDF.<br><br>
+        <strong>7. TIPS:</strong><br>
+        • Tap <b>➕ ADD ITEM</b> to add your own item to any area.<br>
+        • If you skip agreement, tap <b>📋 Agreement Signed/Skipped</b> bar at bottom to bring it back.<br>
+        • Section 2 Exterior Walls / Trim has no Doors / Windows — Doors / Windows are in their own rooms / Garage / Interior sections.
+      </div>
+    </div>
+    <button onclick="toggleInstructions()" style="width:100%;background:#0a1931;color:#FFD500;padding:12px;border-radius:8px;font-weight:800;border:none;">Close</button>
+  </div>
+
+  <div class="inspection-section" id="companySettings" style="display:none;border:3px solid #FFD500;background:#fffdf0;">
+    <h3>⚙️ Company Settings - Universal</h3>
+    <div class="form-grid">
+      <div><label>Company Logo</label><input type="file" id="logoFileInput" accept="image/*" onchange="handleLogoUpload(event)"><div id="logoPreviewWrap" style="margin-top:8px;"><img id="logoPreview" style="max-width:100px;max-height:60px;display:none;border:1px solid #ccc;border-radius:6px;"><span id="noLogoText" style="font-size:10px;color:#666;">No logo</span><button onclick="removeLogo()" style="margin-left:8px;font-size:10px;padding:4px 8px;">Remove</button></div></div>
+      <div><label>Company Name *</label><input id="compName" placeholder="ABC Home Inspections LLC"></div>
+      <div><label>Phone *</label><input id="compPhone" placeholder="(555) 123-4567"></div>
+      <div><label>Email</label><input id="compEmail" placeholder="info@yourcompany.com"></div>
+      <div><label>License / Reg #</label><input id="compTrec" placeholder="TREC # or License"></div>
+      <div><label>Inspector Name</label><input id="compInspector" placeholder="John Doe"></div>
+      <div><label>Inspection Standard</label><select id="compStandard"><option value="generic">Generic International</option><option value="trec">TREC - Texas</option><option value="ashi">ASHI</option><option value="internachi">InterNACHI</option></select></div>
+      <div><label>Street Address</label><input id="compAddr" placeholder="123 Main St"></div>
+      <div><label>City</label><input id="compCity" placeholder="Austin"></div>
+      <div><label>State / Province</label><select id="compState">
+<option value="">Select State</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX" selected>Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+<option value="DC">District of Columbia</option>
+<option value="AS">American Samoa</option>
+<option value="GU">Guam</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="PR">Puerto Rico</option>
+<option value="VI">U.S. Virgin Islands</option>
+<option value="INTL">International / Other</option>
+</select></div>
+      <div><label>Country</label><select id="compCountry">
+<option value="">Select Country</option>
+<option value="USA" selected>United States</option>
+<option value="CAN">Canada</option>
+<option value="MEX">Mexico</option>
+<option value="GBR">United Kingdom</option>
+<option value="AUS">Australia</option>
+<option value="NZL">New Zealand</option>
+<option value="DEU">Germany</option>
+<option value="FRA">France</option>
+<option value="ESP">Spain</option>
+<option value="ITA">Italy</option>
+<option value="NLD">Netherlands</option>
+<option value="BEL">Belgium</option>
+<option value="CHE">Switzerland</option>
+<option value="AUT">Austria</option>
+<option value="SWE">Sweden</option>
+<option value="NOR">Norway</option>
+<option value="DNK">Denmark</option>
+<option value="FIN">Finland</option>
+<option value="IRL">Ireland</option>
+<option value="PRT">Portugal</option>
+<option value="GRC">Greece</option>
+<option value="POL">Poland</option>
+<option value="CZE">Czech Republic</option>
+<option value="HUN">Hungary</option>
+<option value="ROU">Romania</option>
+<option value="TUR">Turkey</option>
+<option value="RUS">Russia</option>
+<option value="UKR">Ukraine</option>
+<option value="IND">India</option>
+<option value="CHN">China</option>
+<option value="JPN">Japan</option>
+<option value="KOR">South Korea</option>
+<option value="SGP">Singapore</option>
+<option value="HKG">Hong Kong</option>
+<option value="ARE">United Arab Emirates</option>
+<option value="SAU">Saudi Arabia</option>
+<option value="QAT">Qatar</option>
+<option value="KWT">Kuwait</option>
+<option value="ISR">Israel</option>
+<option value="ZAF">South Africa</option>
+<option value="NGA">Nigeria</option>
+<option value="EGY">Egypt</option>
+<option value="KEN">Kenya</option>
+<option value="BRA">Brazil</option>
+<option value="ARG">Argentina</option>
+<option value="CHL">Chile</option>
+<option value="COL">Colombia</option>
+<option value="PER">Peru</option>
+<option value="PAN">Panama</option>
+<option value="CRI">Costa Rica</option>
+<option value="DOM">Dominican Republic</option>
+<option value="JAM">Jamaica</option>
+<option value="BHS">Bahamas</option>
+<option value="PRI">Puerto Rico (US Territory)</option>
+<option value="VIR">U.S. Virgin Islands</option>
+<option value="GUM">Guam (US Territory)</option>
+<option value="OTHER">Other / Not Listed</option>
+</select></div>
+      <div><label>Website</label><input id="compWeb" placeholder="www.yourcompany.com"></div>
+    </div>
+    <div style="padding:12px;display:flex;gap:8px;"><button onclick="saveCompanySettings()" style="flex:1;background:#0a1931;color:#FFD500;padding:14px;border-radius:10px;font-weight:900;border:none;">💾 SAVE Company Settings</button><button onclick="toggleCompanySettings()" style="flex:0.4;background:#fff;color:#0a1931;border:2px solid #0a1931;padding:14px;border-radius:10px;font-weight:800;">Cancel</button></div>
+  </div>
+
+  
+  <div class="agreement-wrapper" id="agreementWrapper">
+    <div class="agreement-card">
+      <div class="agreement-header"><h2><span id="agreementTitle">HOME INSPECTION AGREEMENT</span> - <span id="agreementStateLabel">UNIVERSAL</span> <span class="badge-required">REQUIRED</span></h2><div class="header-actions"><button onclick="skipAgreement()" style="background:#FFD500;color:#000;border:2px solid #000;font-weight:900;">⏩ SKIP</button><button onclick="minimizeAgreement()">Minimize</button></div></div>
+      <div class="form-grid" style="background:#fffbe6;">
+        <div><label>Client Name *</label><input id="custName" placeholder="John Smith"></div>
+        <div><label>Client Phone / Email</label><input id="custContact" placeholder="(555) 123-4567 / email"></div>
+        <div><label>Property Address *</label><input id="propAddr" placeholder="123 Main St"></div>
+        <div><label>City</label><input id="propCity" placeholder="Austin"></div>
+        <div><label>State</label><select id="propState">
+<option value="">Select State</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX" selected>Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+<option value="DC">District of Columbia</option>
+<option value="AS">American Samoa</option>
+<option value="GU">Guam</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="PR">Puerto Rico</option>
+<option value="VI">U.S. Virgin Islands</option>
+<option value="INTL">International / Other</option>
+</select></div>
+        <div><label>Country</label><select id="propCountry">
+<option value="">Select Country</option>
+<option value="USA" selected>United States</option>
+<option value="CAN">Canada</option>
+<option value="MEX">Mexico</option>
+<option value="GBR">United Kingdom</option>
+<option value="AUS">Australia</option>
+<option value="NZL">New Zealand</option>
+<option value="DEU">Germany</option>
+<option value="FRA">France</option>
+<option value="ESP">Spain</option>
+<option value="ITA">Italy</option>
+<option value="NLD">Netherlands</option>
+<option value="BEL">Belgium</option>
+<option value="CHE">Switzerland</option>
+<option value="AUT">Austria</option>
+<option value="SWE">Sweden</option>
+<option value="NOR">Norway</option>
+<option value="DNK">Denmark</option>
+<option value="FIN">Finland</option>
+<option value="IRL">Ireland</option>
+<option value="PRT">Portugal</option>
+<option value="GRC">Greece</option>
+<option value="POL">Poland</option>
+<option value="CZE">Czech Republic</option>
+<option value="HUN">Hungary</option>
+<option value="ROU">Romania</option>
+<option value="TUR">Turkey</option>
+<option value="RUS">Russia</option>
+<option value="UKR">Ukraine</option>
+<option value="IND">India</option>
+<option value="CHN">China</option>
+<option value="JPN">Japan</option>
+<option value="KOR">South Korea</option>
+<option value="SGP">Singapore</option>
+<option value="HKG">Hong Kong</option>
+<option value="ARE">United Arab Emirates</option>
+<option value="SAU">Saudi Arabia</option>
+<option value="QAT">Qatar</option>
+<option value="KWT">Kuwait</option>
+<option value="ISR">Israel</option>
+<option value="ZAF">South Africa</option>
+<option value="NGA">Nigeria</option>
+<option value="EGY">Egypt</option>
+<option value="KEN">Kenya</option>
+<option value="BRA">Brazil</option>
+<option value="ARG">Argentina</option>
+<option value="CHL">Chile</option>
+<option value="COL">Colombia</option>
+<option value="PER">Peru</option>
+<option value="PAN">Panama</option>
+<option value="CRI">Costa Rica</option>
+<option value="DOM">Dominican Republic</option>
+<option value="JAM">Jamaica</option>
+<option value="BHS">Bahamas</option>
+<option value="PRI">Puerto Rico (US Territory)</option>
+<option value="VIR">U.S. Virgin Islands</option>
+<option value="GUM">Guam (US Territory)</option>
+<option value="OTHER">Other / Not Listed</option>
+</select></div>
+        <div><label>ZIP / Postal</label><input id="propZip" placeholder="78701"></div>
+        <div><label>Inspection Date</label><input id="propDate" type="date"></div>
+        <div><label>Fee $</label><input id="propFee" placeholder="375" value="375"></div>
+        <div><label>Client Present?</label><select id="clientPresent"><option>Yes</option><option>No</option></select></div>
+      </div>
+      
+      <button type="button" class="readable-btn" onclick="openReadableAgreement()">📖 Read Full Agreement — Expand — Easier to Read for Customer</button>
+      <div class="terms-box" id="termsBox" onclick="openReadableAgreement()" style="cursor:pointer;" title="Tap to expand - Easier to read">
+        <strong>PRE-INSPECTION AGREEMENT - HOME BUYERS INSPECTION</strong><br><br>
+        <strong>Between:</strong> Inspector (Company) And: Client (named above)<br>
+        <strong>Property Inspected:</strong> Address listed above<br><br>
+        
+        <strong>1. SCOPE OF INSPECTION:</strong> This is a visual inspection of the accessible areas only. This report is based on the observations made on the date of inspection. Inspector agrees to perform a limited visual inspection of the property and to provide Client with a written report. The inspection is performed in accordance with the Standards of Practice of TREC / ASHI / InterNACHI / Generic International as selected in Company Settings.<br><br>
+        
+        <strong>2. WHAT REPORT INCLUDES:</strong> Inspection of Roof Type/Condition, Exterior Walls/Trim, Porch/Deck, Attic, Under Floor Area, Garage (Fire Wall, Fire Door, Passage Doors, Car Doors, Door Opener Safety Sensors), Water Heater (Type Gas 40 gallon, Pressure relief valve, Double strapping), Plumbing (Type copper, Dialytic fitting, Line pressure 60 psig, Type waste ABS), Electrical (Type service Under or Overhead, Type wiring, Main disconnect 100 amp, Breaker sizes 15/20/30 Amp and count, GFCI, AFCI, Federal Pacific/Zinsco check, Double Taps), Heating and Air Conditioning, Smoke Alarm/Carbon Monoxide, Interior Rooms (Entry/Living, Dining, Kitchen Cabinets Counter Top Sink Disposal Oven/Range Cooktop, Hall/Laundry, Bathrooms, Bedrooms) with sub-categories Doors, Windows, Lights, Electrical, Walls/Ceilings/Floors, Appliances, Optional Systems.<br><br>
+        
+        <strong>3. WHAT NOT INCLUDED / LIMITATIONS:</strong> This is NOT a code inspection, warranty, guarantee, or insurance policy. Latent and concealed defects are excluded. Inspector does NOT inspect: Environmental Hazards (Mold, Asbestos, Lead, Radon, Formaldehyde), Heat Exchanger internal, GFCI may not have been requirement at time of construction, Underground sewer, Septic, Well water quality, Solar, Pool structural, Lawn sprinkler concealed, Outbuildings detached, Low voltage, Alarm, Sound system, Intercom. Inspection does NOT include moving furniture, stored items, or dismantling equipment. Inspector does NOT operate shut-off valves, pilot lights, or overcurrent devices.<br><br>
+        
+        <strong>4. VISUAL ACCESSIBLE ONLY:</strong> This inspection is visual and accessible only. Furniture, storage, vegetation, weather conditions may limit inspection. Inspector is not required to move personal property, climb over obstacles, or enter areas that are not readily accessible or pose safety risk. Attic inspection limited to area accessible from scuttle, Under Floor limited to accessible crawlspace, Roof inspected from ground with binoculars or from edge if safe.<br><br>
+        
+        <strong>5. NOT GUARANTEE WARRANTY:</strong> This inspection and report is NOT a guarantee or warranty, express or implied, regarding future performance, condition, or life expectancy of systems or components. Client understands that inspection does not eliminate risk or predict future failures. Recommendation for re-inspection by licensed specialists if deficient items noted. This report is not a substitute for Seller's Disclosure.<br><br>
+        
+        <strong>6. PAYMENT / FEE:</strong> Fee $375 Total $375 - No Tax Added - as noted above. Payment due at time of inspection or within 5 days. Re-inspection fee $255/hour minimum 1 hour. Expert witness testimony $650/hour. Collection costs including attorney fees are Client's responsibility if not paid on time.<br><br>
+        
+        <strong>7. LITIGATION / LIMITED LIABILITY / CONFIDENTIAL:</strong> In any litigation arising from this inspection/report, prevailing party entitled to attorney fees. Inspector's liability limited to fee paid. Report is confidential and for Client only, not transferable. Client agrees not to allow disclosure to third parties without written consent except as required by law. If Client allows disclosure, Client agrees to indemnify Inspector for third party claims.<br><br>
+        
+        <strong>8. DISPUTE / RE-INSPECTION / ARBITRATION:</strong> Client agrees to notify Inspector in writing of any complaint within 7 days of report and allow Inspector to re-inspect before repairs. Failure to allow re-inspection voids any claim. Any dispute shall be submitted to mediation/arbitration in county of inspection before litigation. Inspector is not responsible for repairs or for contractor's work.<br><br>
+        
+        <strong>STATEMENT AND ACCEPTANCE 1-8:</strong> Client has read, understands, and accepts all terms 1-8 above, including limitations, exclusions, payment, and liability limits. Client understands this is not a warranty. Client agrees to hold harmless. Buyer present Yes/No. Fee Total. Inspector signature and Date. Read and Approved.<br><br>
+        
+        <em>By signing below, Client acknowledges receipt and agreement to this Pre-Inspection Agreement. This agreement is based on TREC Promulgated Form and International Standards. Property inspected as-is where-is on inspection date.</em>
+      </div>
+      
+      <div class="checks">
+        <label class="check-row"><input type="checkbox" id="chk1"> <span><strong>1. Client Agrees Scope:</strong> I agree Inspector will perform visual inspection of accessible areas only per selected Standard (TREC/ASHI/InterNACHI/Generic). I understand what is included and not included.</span></label>
+        <label class="check-row"><input type="checkbox" id="chk2"> <span><strong>2. Visual Accessible Only:</strong> I understand inspection is visual only, furniture/storage may limit, inspector will not move personal property or enter unsafe areas.</span></label>
+        <label class="check-row"><input type="checkbox" id="chk3"> <span><strong>3. Not Guarantee/Warranty:</strong> I understand this is NOT a guarantee, warranty, or insurance. No prediction of future performance or life expectancy.</span></label>
+        <label class="check-row"><input type="checkbox" id="chk4"> <span><strong>4. Payment Due:</strong> I agree Fee $375 Total $375 - No Tax Added - due at inspection. Reinspection $255/hr, Expert $650/hr, collection costs if unpaid. I agree to pay.</span></label>
+        <label class="check-row"><input type="checkbox" id="chk5"> <span><strong>5. Litigation Limited Fee / Confidential:</strong> I agree liability limited to fee paid, confidential report for me only, prevailing party attorney fees, indemnify if I disclose to third party.</span></label>
+        <label class="check-row"><input type="checkbox" id="chk6"> <span><strong>6. Reinspection Required:</strong> I agree to notify Inspector within 7 days of any complaint and allow reinspection before repairs. Failure voids claim.</span></label>
+      </div>
+      
+      <div class="form-grid" style="background:#fff;">
+        <div><label>Client Signature (Type Name) *</label><input id="clientSig" placeholder="Type full name as signature"></div>
+        <div><label>Date *</label><input id="clientSigDate" type="date"></div>
+        <div><label>Inspector Name</label><input id="inspectorName" placeholder="Patrick Uhri"></div>
+        <div><label>License #</label><input id="licenseNum" placeholder="TREC # or License"></div>
+      </div>
+      
+      <div class="action-bar" id="actionBar">
+        <button class="btn-minimize" onclick="skipAgreement()">Later</button>
+        <button class="btn-sign" onclick="signAgreement()">✅ SIGN & START</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="minimized-bar" id="minimizedBar" onclick="restoreAgreement()">📋 Agreement Signed/Skipped - Tap to restore</div>
+
+  <!-- READABLE AGREEMENT - Expandable - Easier for customer to read - Separate modal, does NOT use agreement-wrapper fullscreen, so Later/Sign cannot break -->
+  <div id="readableAgreementModal" class="readable-modal">
+    <div class="readable-modal-header">
+      <h2>📖 Pre-Inspection Agreement — Readable</h2>
+      <button type="button" onclick="closeReadableAgreement()" style="background:#FFD500;color:#000;border:none;border-radius:8px;padding:8px 12px;font-weight:900;cursor:pointer;">✕ Close</button>
+    </div>
+    <div class="readable-modal-body" id="readableAgreementBody">
+      <!-- Filled by JS from termsBox -->
+    </div>
+    <div class="readable-modal-footer">
+      <button type="button" onclick="closeReadableAgreement()" style="background:#fff;color:#0a1931;border:2px solid #0a1931;">⬅ Back to Agreement</button>
+      <button type="button" onclick="returnToReportFromReadable()" style="background:#0a1931;color:#FFD500;border:none;">📋 Return to Report</button>
+    </div>
+  </div>
+
+
+  <div class="inspection-section"><h3>📋 20 Inspection Sections - 101 Items - Universal - <span id="currentStandardLabel">Generic International</span></h3><div class="room-grid" id="roomGrid"></div>
+  <div style="margin-top:16px;text-align:center;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+    <button onclick="addCustomRoom()" style="background:#0a1931;color:#FFD500;border:none;border-radius:10px;padding:16px 32px;font-weight:900;font-size:16px;cursor:pointer;min-height:50px;box-shadow:0 2px 6px rgba(0,0,0,0.2);">➕ Add Custom Room</button>
+    <button onclick="addItemGlobal()" style="background:#FFD500;color:#000;border:2px solid #000;border-radius:10px;padding:16px 32px;font-weight:900;font-size:16px;cursor:pointer;min-height:50px;box-shadow:0 2px 6px rgba(0,0,0,0.2);">➕ Add Item</button>
+    <button onclick="resetCustomRooms()" style="background:#fff;color:#0a1931;border:2px solid #0a1931;border-radius:10px;padding:12px 20px;font-weight:700;font-size:12px;cursor:pointer;">Reset Custom</button>
+  </div></div>
+  <div class="inspection-section" id="detailPanel" style="display:none;"></div>
 </div>
 
-<div class="card">
-<h2>Features</h2>
-<h3>Exterior, Roof, Structural</h3>
-<p>Type - Composition Shingle / Tile / Metal, Condition, Flashing, Gutters, Walls, Trim, Porch, Deck, Attic, Under Floor, Garage</p>
-<h3>Systems</h3>
-<p>Water Heater, Plumbing, Electrical Main Panel & Breakers, HVAC, Smoke/CO Alarms</p>
-<h3>Interior</h3>
-<p>Entry, Living, Dining, Kitchen (Cabinets, Countertop, Sink), Hall, Laundry, Bathrooms 1-4 (Toilet, Sink, Countertop, Cabinets, Shower/Tub separate), Bedrooms 1-4, Appliances, Statements 1-8</p>
-</div>
+<div id="reportModal"><div id="reportModalInner"></div></div>
+<div id="saveToast"></div>
 
-<div class="card">
-<h2>Privacy & Support</h2>
-<p><a href="privacy.html">Privacy Policy</a> - We collect NO data. All reports stored locally on your device.</p>
-<p>Email: uhri.texas.inspection@gmail.com<br>Phone: 830-714-3027<br>Boerne, TX 78006</p>
-<p>Support URL: https://jpuhri.github.io/uhri.com/privacy.html<br>Marketing: https://jpuhri.github.io/uhri.com/</p>
-</div>
+<script>
+const ROOMS = [
+  {name:"1. EXTERIOR - ROOF", items:[
+    {label:"Type - Composition Shingle / Tile / Metal / Flat / Other", type:"I,NI,NP,D"},
+    {label:"Condition - Mineral deterioration / Good / Patched / Leaks / Age", type:"I,NI,NP,D"},
+    {label:"Flashing / Penetrations / Vents / Condition", type:"I,NI,NP,D"},
+    {label:"Gutters / Downspouts / Condition", type:"I,NI,NP,D"},
+    {label:"Skylights / Chimney Cap / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"2. EXTERIOR - WALLS / TRIM", items:[
+    {label:"Type Structure - Stucco / Brick / Siding / Wood / Condition", type:"I,NI,NP,D"},
+    {label:"Trim Type - Wood / Metal / Fascia / Soffit / Condition", type:"I,NI,NP,D"},
+    {label:"Condition - Many areas deterioration / Good / Cracks / Damage / Paint", type:"I,NI,NP,D"}
+  ]},
+  {name:"3. EXTERIOR - PORCH / DECK", items:[
+    {label:"Type - Concrete slab / Wood cover / Composite / Condition", type:"I,NI,NP,D"},
+    {label:"Electrical - Present / GFCI receptacles / Condition", type:"I,NI,NP,D"},
+    {label:"Lights - Missing lens cover / Fixtures / Switches / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Structure - Posts / Beams / Decking / Ledger / Condition", type:"I,NI,NP,D"},
+    {label:"Stairs / Railings / Safety / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"4. EXTERIOR - ATTIC", items:[
+    {label:"Type - Truss type / Rafters / Condition", type:"I,NI,NP,D"},
+    {label:"Insulation - Batt insulation / Blown / Depth / Condition", type:"I,NI,NP,D"},
+    {label:"Ventilation - Soffit / Ridge / Gable / Condition", type:"I,NI,NP,D"},
+    {label:"Access - Scuttle / Pull-down / Condition", type:"I,NI,NP,D"},
+    {label:"Condition - Moisture / Damage / Evidence of leaks", type:"I,NI,NP,D"}
+  ]},
+  {name:"5. EXTERIOR - UNDER FLOOR AREA", items:[
+    {label:"Type - Concrete slab / Pier and Beam / Crawlspace / Condition", type:"I,NI,NP,D"},
+    {label:"Framing / Joists / Beams / Posts / Condition", type:"I,NI,NP,D"},
+    {label:"Insulation / Vapor Barrier / Condition", type:"I,NI,NP,D"},
+    {label:"Ventilation / Moisture / Drainage / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"6. EXTERIOR - GARAGE", items:[
+    {label:"Type - Attached / Detached / Size / Cars / Condition", type:"I,NI,NP,D"},
+    {label:"Roof / Fire Wall / Fire Door / Condition", type:"I,NI,NP,D"},
+    {label:"Passage Doors - Doors / Operation / Fire Rating / Self-Close / Locks", type:"I,NI,NP,D"},
+    {label:"Car Doors - Metal sectional / Wood / Type / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Door Opener - Chain / Belt / Screw Drive / Present / Operation / Safety Sensors / Auto-Reverse", type:"I,NI,NP,D"},
+    {label:"Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Garage Windows / Operation / Locks / Condition", type:"I,NI,NP,D"},
+    {label:"Lights - Fixtures / Switches / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Electrical - Outlets / GFCI Receptacle / Polarity / Wiring / Condition", type:"I,NI,NP,D"},
+    {label:"Walls / Ceiling / Floor / Slab / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"7. SYSTEMS - WATER HEATER", items:[
+    {label:"Type - Gas / Electric / Tank / Tankless / Size 40 gallon / Location", type:"I,NI,NP,D"},
+    {label:"Pressure relief valve - Provided / Condition / Discharge", type:"I,NI,NP,D"},
+    {label:"Condition - Double strapping / Good / Age / Leaks / Corrosion", type:"I,NI,NP,D"},
+    {label:"Venting / TPR / Pan / Expansion Tank / Condition", type:"I,NI,NP,D"},
+    {label:"Electrical / Gas Connection / Breaker Size / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"8. SYSTEMS - PLUMBING", items:[
+    {label:"Type - Copper / PEX / Galvanized / Condition", type:"I,NI,NP,D"},
+    {label:"Dialytic fitting / Condition / Corrosion", type:"I,NI,NP,D"},
+    {label:"Line pressure 60 psig / Pressure reading / Regulator Present Yes/No", type:"I,NI,NP,D"},
+    {label:"Type waste - ABS / PVC / Cast Iron / Condition / Flow", type:"I,NI,NP,D"},
+    {label:"Fixtures / Faucets / Drains / Vents / Operation / Leaks", type:"I,NI,NP,D"},
+    {label:"Gas Distribution / Shutoffs / Leaks / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"9. SYSTEMS - ELECTRICAL - Main Panel & Breakers", items:[
+    {label:"Type service - Under or Overhead / Underground / Aerial / Location", type:"I,NI,NP,D"},
+    {label:"Type wiring - Copper / Aluminum / Romex / Condition / Wire Type all details", type:"I,NI,NP,D"},
+    {label:"Main disconnect 100 amp / 200 amp / Size / Location / Condition", type:"I,NI,NP,D"},
+    {label:"Main Disconnect - Main Breaker Size - Enter main breaker size", type:"I,NI,NP,D"},
+    {label:"Main Panel - Location / Manufacturer / Condition / Cover / Dead Front", type:"I,NI,NP,D"},
+    {label:"Main Panel - Number of Breakers - How many breakers in main panel", type:"I,NI,NP,D"},
+    {label:"Main Panel - Breaker Count Table - How many of each size", type:"BREAKER_TABLE", panel:"main"},
+    {label:"Circuit Breakers - Type Single / Double / Tandem / AFCI / GFCI Breakers / Spare Breakers", type:"I,NI,NP,D"},
+    {label:"Circuit Breakers - Labeling / Directory / Double Taps / Compatibility / Condition", type:"I,NI,NP,D"},
+    {label:"Sub Panel(s) - Location / Amperage / Condition", type:"I,NI,NP,D"},
+    {label:"Sub Panel(s) - Number of Breakers - How many breakers in sub panel(s)", type:"I,NI,NP,D"},
+    {label:"Sub Panel(s) - Breaker Count Table - How many of each size", type:"BREAKER_TABLE", panel:"sub"},
+    {label:"Safety - Missing Knockouts / Corrosion / Recalled Panels Federal Pacific Zinsco / Clearance / Directory", type:"I,NI,NP,D"}
+  ]},
+  {name:"10. SYSTEMS - HEATING AND AIR CONDITIONING", items:[
+    {label:"Type - Central / Heat Pump / Furnace / Mini Split / Ductless Mini Split / Age / Manufacturer / Condition", type:"I,NI,NP,D"},
+    {label:"Heating Operation / Performance / Temperature Rise / Controls / Thermostat", type:"I,NI,NP,D"},
+    {label:"Cooling Operation / Temperature Split / Performance / Refrigerant / Condition", type:"I,NI,NP,D"},
+    {label:"Condenser / Evaporator / Lines / Drain / Disconnect / Breaker Size", type:"I,NI,NP,D"},
+    {label:"Ducts / Filter / Insulation / Condition / Air Flow", type:"I,NI,NP,D"},
+    {label:"Venting / Flue / Clearance / Safety", type:"I,NI,NP,D"}
+  ]},
+  {name:"11. SYSTEMS - SMOKE ALARM / CARBON MONOXIDE", items:[
+    {label:"Smoke Detectors - Type / Location / Operation / Power / Condition / Quantity", type:"I,NI,NP,D"},
+    {label:"Carbon Monoxide Detectors - Type / Location / Operation / Condition / Quantity", type:"I,NI,NP,D"},
+    {label:"Safety - Interconnected / Hardwired / Battery Backup / Expired / Chirping / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"12. INTERIOR - ENTRY / LIVING ROOM", items:[
+    {label:"Doors - Operation / Locks / Condition / Type", type:"I,NI,NP,D"},
+    {label:"Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Screens / Locks / Egress / Seals / Condition", type:"I,NI,NP,D"},
+    {label:"Lights - Fixtures / Switches / Operation / Ceiling Fan / Condition", type:"I,NI,NP,D"},
+    {label:"Electrical - Outlets / Switches / GFCI / Polarity / Cover Plates / Condition", type:"I,NI,NP,D"},
+    {label:"Walls / Ceilings / Floors / Closets / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"13. INTERIOR - DINING ROOM", items:[
+    {label:"Doors - Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Screens / Condition", type:"I,NI,NP,D"},
+    {label:"Lights - Chandelier / Fixtures / Switches / Dimmer / Condition", type:"I,NI,NP,D"},
+    {label:"Electrical - Outlets / Switches / Polarity / Condition", type:"I,NI,NP,D"},
+    {label:"Walls / Ceilings / Floors / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"14. INTERIOR - KITCHEN", items:[
+    {label:"Doors - Entry / Pantry / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Screens / Condition / Above Sink", type:"I,NI,NP,D"},
+    {label:"Lights - Recessed / Under Cabinet / Switches / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Electrical - Outlets / GFCI Protection / Dedicated Circuits / Polarity / Condition", type:"I,NI,NP,D"},
+    {label:"Cabinets - Type Wood/Laminate/Metal / Condition / Hardware / Operation", type:"I,NI,NP,D"},
+    {label:"Counter Top - Granite / Quartz / Laminate / Tile / Condition / Backsplash", type:"I,NI,NP,D"},
+    {label:"Sink / Faucet - Single/Double Bowl / Stainless/Porcelain / Operation / Sprayer / Leaks", type:"I,NI,NP,D"},
+    {label:"Disposal / Dishwasher - Present / Operation / Condition / Drain / Air Gap", type:"I,NI,NP,D"},
+    {label:"Oven/Range - Type Gas/Electric / Condition / Anti-Tip / Operation / Breaker", type:"I,NI,NP,D"},
+    {label:"Cooktop - Type Gas/Electric / Burners / Condition / Ventilation", type:"I,NI,NP,D"},
+    {label:"Walls / Ceilings / Floors / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"15. INTERIOR - HALL / LAUNDRY", items:[
+    {label:"Hall - Doors / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Hall - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Hall - Lights - Fixtures / Switches / Operation", type:"I,NI,NP,D"},
+    {label:"Hall - Electrical - Outlets / Switches / Smoke Detectors / Condition", type:"I,NI,NP,D"},
+    {label:"Laundry - Doors / Windows / Lights / Electrical / Condition", type:"I,NI,NP,D"},
+    {label:"Laundry - Hookups / Dryer Vent / Outlets / GFCI / Condition", type:"I,NI,NP,D"},
+    {label:"Walls / Ceilings / Floors / Condition", type:"I,NI,NP,D"}
+  ]},
+  {name:"16. INTERIOR - BATHROOMS 1-4", items:[
+    {label:"Bath 1 - Doors - Operation / Privacy Lock / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Privacy / Screens / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Lights - Vanity / Overhead / Switches / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Electrical - Outlets / GFCI / Vent Fan / Polarity / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Toilet - Operation / Flush / Fill Valve / Leaks / Loose at Floor / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Sink / Vanity - Faucet Operation / Drain Flow / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Tub/Shower - Type / Door / Curtain Rod / Faucet / Diverter / Drain / Caulking / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Cabinets / Counter Top - Type Wood/Laminate / Doors / Drawers / Hardware / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 1 - Walls / Ceilings / Floors / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Doors - Operation / Privacy Lock / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Privacy / Screens / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Lights - Vanity / Overhead / Switches / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Electrical - Outlets / GFCI / Vent Fan / Polarity / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Toilet - Operation / Flush / Fill Valve / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Sink / Vanity - Faucet Operation / Drain Flow / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Tub/Shower - Type / Door / Curtain Rod / Faucet / Diverter / Drain / Caulking / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Cabinets / Counter Top - Type Wood/Laminate / Doors / Drawers / Hardware / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 2 - Walls / Ceilings / Floors / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 3 - Doors / Windows / Lights / Electrical / Toilet / Sink / Tub/Shower / Cabinets / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 3 - Toilet - Operation / Flush / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 3 - Sink - Faucet Operation / Drain Flow / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 3 - Tub/Shower - Type / Door / Faucet / Drain / Caulking / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 3 - Cabinets / Counter - Type / Doors / Hardware / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 4 / Half Bath - Doors / Windows / Lights / Electrical / Toilet / Sink / Cabinets / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 4 - Toilet - Operation / Flush / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 4 - Sink - Faucet Operation / Drain Flow / Leaks / Condition", type:"I,NI,NP,D"},
+    {label:"Bath 4 - Cabinets / Counter - Type / Doors / Hardware / Condition", type:"I,NI,NP,D"},
+    {label:"Walls / Ceilings / Floors / Condition - All Baths", type:"I,NI,NP,D"}
+  ]},
+  {name:"17. INTERIOR - BEDROOMS 1-4", items:[
+    {label:"Bedroom 1 Master - Doors - Operation / Privacy Lock / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 1 - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Egress / Screens / Locks / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 1 - Lights - Fixtures / Switches / Ceiling Fan / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 1 - Electrical - Outlets / Switches / GFCI / Polarity / AFCI / Cover Plates / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 2 - Doors - Operation / Privacy Lock / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 2 - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Egress / Screens / Locks / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 2 - Lights - Fixtures / Switches / Ceiling Fan / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 2 - Electrical - Outlets / Switches / GFCI / Polarity / AFCI / Cover Plates / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 3 - Doors - Operation / Privacy Lock / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 3 - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Egress / Screens / Locks / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 3 - Lights - Fixtures / Switches / Ceiling Fan / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 3 - Electrical - Outlets / Switches / GFCI / Polarity / AFCI / Cover Plates / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 4 / Bonus / Office - Doors - Operation / Privacy Lock / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 4 / Bonus / Office - Windows - Type Double Hung / Single Hung / Sliding / Fixed / Casement / Awning / Picture / Operation / Egress / Screens / Locks / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 4 / Bonus / Office - Lights - Fixtures / Switches / Ceiling Fan / Operation / Condition", type:"I,NI,NP,D"},
+    {label:"Bedroom 4 / Bonus / Office - Electrical - Outlets / Switches / GFCI / Polarity / AFCI / Cover Plates / Condition", type:"I,NI,NP,D"},
+    {label:"Walls / Ceilings / Floors / Closets / Condition - All Bedrooms", type:"I,NI,NP,D"}
+  ]},
+  {name:"18. STATEMENT AND ACCEPTANCE 1-8", items:[
+    {label:"STATEMENT AND ACCEPTANCE 1-8", type:"STATEMENT_TEXT"}
+  ]}
+];
 
-<div class="card" style="text-align:center;background:#0a1931;color:#FFD500">
-<strong>UHRI HOME BUYERS INSPECTION SERVICE</strong><br>© 2026 UHRI - TREC Compliant - Universal
-</div>
+
+// Photo functions - Build 29 photo option - native bridge only
+function triggerPhoto(id){
+  try {
+    // Native bridge - works on iPad/iPhone, window stays open
+    if(window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.takePhoto){
+      window.webkit.messageHandlers.takePhoto.postMessage({id: id});
+      return;
+    }
+  } catch(e){}
+  // Fallback for browser testing
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.capture = 'environment';
+  input.onchange = (e)=>{
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev)=>{
+      receiveNativePhoto(id, ev.target.result);
+    };
+    reader.readAsDataURL(file);
+  };
+  input.click();
+}
+
+function receiveNativePhoto(id, dataUrl){
+  try {
+    const img = document.getElementById('img_'+id);
+    const count = document.getElementById('count_'+id);
+    if(img){
+      img.src = dataUrl;
+      img.style.display = 'block';
+      img.classList.add('has-photo');
+    }
+    if(count){
+      const current = parseInt(count.innerText) || 0;
+      count.innerText = (current+1) + ' photo(s)';
+    }
+    // Save to localStorage
+    localStorage.setItem('photo_'+id, dataUrl);
+    showToast('📷 Photo added!');
+  } catch(e){
+    console.log('photo error', e);
+  }
+}
+
+function viewPhoto(id){
+  try {
+    const img = document.getElementById('img_'+id);
+    if(img && img.src){
+      if(window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.viewPhoto){
+        window.webkit.messageHandlers.viewPhoto.postMessage({dataUrl: img.src});
+      } else {
+        window.open(img.src, '_blank');
+      }
+    }
+  } catch(e){}
+}
+
+function renderRooms(){
+  const grid=document.getElementById('roomGrid');
+  if(!grid) return;
+  grid.innerHTML='';
+  ROOMS.forEach((room)=>{
+    const btn=document.createElement('div');
+    btn.className='room-btn';
+    btn.innerHTML=room.name + '<br><small>'+room.items.length+' items</small>';
+    btn.onclick=()=>openRoom(room.name);
+    grid.appendChild(btn);
+  });
+}
+
+function loadCustomRooms(){
+  try {
+    const saved = localStorage.getItem('uhri_custom_rooms');
+    if(saved){
+      const customRooms = JSON.parse(saved);
+      customRooms.forEach(cr=>{
+        if(!ROOMS.find(r=>r.name===cr.name)){
+          ROOMS.push(cr);
+        }
+      });
+    }
+  } catch(e){ console.log('load custom error', e); }
+}
+
+loadCustomRooms();
+renderRooms();
+
+
+
+function addItemGlobal(){
+  const existing=document.getElementById('addItemGlobalModal');
+  if(existing) existing.remove();
+  const modal=document.createElement('div');
+  modal.id='addItemGlobalModal';
+  modal.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10002;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML=`<div style="background:#fff;border-radius:16px;padding:24px;max-width:400px;width:100%;max-height:90vh;overflow-y:auto;"><h3 style="margin:0 0 12px 0;color:#0a1931;font-size:16px;font-weight:900;">➕ Add Item</h3><label style="font-weight:700;font-size:13px;">Item Name:</label><input id="globalItemInput" placeholder="e.g., Jacuzzi Tub, Wet Bar, Fireplace" style="width:100%;padding:12px;border:2px solid #0a1931;border-radius:8px;font-size:15px;margin:8px 0 8px 0;"><label style="font-weight:700;font-size:13px;">Description / Condition:</label><input id="globalItemDesc" placeholder="e.g., Good / Damaged / Type" style="width:100%;padding:12px;border:2px solid #ccc;border-radius:8px;font-size:14px;margin:8px 0 12px 0;" value="I,NI,NP,D - Condition"><div style="display:flex;gap:10px;"><button onclick="document.getElementById('addItemGlobalModal').remove()" style="flex:1;background:#fff;border:2px solid #0a1931;padding:12px;border-radius:10px;font-weight:800;">Cancel</button><button id="confirmGlobalAddBtn" style="flex:1;background:#0a1931;color:#FFD500;padding:12px;border-radius:10px;font-weight:900;border:none;">Add</button></div></div>`;
+  document.body.appendChild(modal);
+  const input=document.getElementById('globalItemInput');
+  input.focus();
+  const confirm=()=>{
+    const itemLabel=input.value.trim();
+    const itemDesc=document.getElementById('globalItemDesc').value.trim() || "I,NI,NP,D - Condition";
+    if(!itemLabel) return;
+    // Add to first custom room or create Custom Items room
+    let targetRoom = ROOMS.find(r=>r.name.includes('Custom') || r.name.includes('21.') || r.name.includes('BONUS'));
+    if(!targetRoom){
+      // Create Custom Items room if not exists
+      targetRoom = {name:"21. CUSTOM ITEMS", items:[]};
+      ROOMS.push(targetRoom);
+      try{
+        let customRooms = JSON.parse(localStorage.getItem('uhri_custom_rooms')||'[]');
+        customRooms.push(targetRoom);
+        localStorage.setItem('uhri_custom_rooms', JSON.stringify(customRooms));
+      }catch(e){}
+      renderRooms();
+    }
+    targetRoom.items.push({label: itemLabel + ' - ' + itemDesc, type:itemDesc});
+    try{
+      let customRooms = JSON.parse(localStorage.getItem('uhri_custom_rooms')||'[]');
+      const idx=customRooms.findIndex(cr=>cr.name===targetRoom.name);
+      if(idx!==-1){customRooms[idx]=targetRoom; localStorage.setItem('uhri_custom_rooms', JSON.stringify(customRooms));}
+      else{customRooms.push(targetRoom); localStorage.setItem('uhri_custom_rooms', JSON.stringify(customRooms));}
+    }catch(e){}
+    modal.remove();
+    openRoom(targetRoom.name);
+    showToast('✅ Added item: '+itemLabel);
+  };
+  document.getElementById('confirmGlobalAddBtn').onclick=confirm;
+  input.addEventListener('keydown',(e)=>{ if(e.key==='Enter') confirm(); if(e.key==='Escape') modal.remove(); });
+}
+
+function addCustomRoom(){
+  // Create dropdown modal for custom room
+  const existingModal = document.getElementById('addRoomModal');
+  if(existingModal) existingModal.remove();
+  
+  const modal = document.createElement('div');
+  modal.id = 'addRoomModal';
+  modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML = `
+    <div style="background:#fff;border-radius:16px;padding:24px;max-width:400px;width:100%;max-height:90vh;overflow-y:auto;">
+      <h3 style="margin:0 0 16px 0;color:#0a1931;font-size:18px;font-weight:900;">➕ Add Custom Room</h3>
+      
+      <label style="display:block;margin-bottom:8px;font-weight:700;font-size:13px;color:#333;">Select Room Type:</label>
+      <select id="roomTypeSelect" style="width:100%;padding:12px;border:2px solid #0a1931;border-radius:8px;font-size:15px;margin-bottom:16px;">
+        <option value="">-- Choose Type --</option>
+        <option value="Bonus Room">Bonus Room</option>
+        <option value="Patio">Patio</option>
+        <option value="Deck / Porch">Deck / Porch</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Game Room">Game Room</option>
+        <option value="Media Room / Theater">Media Room / Theater</option>
+        <option value="Home Office / Study">Home Office / Study</option>
+        <option value="Gym / Exercise Room">Gym / Exercise Room</option>
+        <option value="Sunroom">Sunroom</option>
+        <option value="Screened Porch">Screened Porch</option>
+        <option value="Balcony">Balcony</option>
+        <option value="Storage Room">Storage Room</option>
+        <option value="Utility Room">Utility Room</option>
+        <option value="Mudroom">Mudroom</option>
+        <option value="Pantry">Pantry</option>
+        <option value="Walk-in Closet">Walk-in Closet</option>
+        <option value="Attic / Bonus Space">Attic / Bonus Space</option>
+        <option value="Basement / Cellar">Basement / Cellar</option>
+        <option value="Wine Cellar">Wine Cellar</option>
+        <option value="Bar Area">Bar Area</option>
+        <option value="Library">Library</option>
+        <option value="Craft Room">Craft Room</option>
+        <option value="Nursery">Nursery</option>
+        <option value="In-Law Suite">In-Law Suite</option>
+        <option value="Guest House">Guest House</option>
+        <option value="Pool House">Pool House</option>
+        <option value="Garage - Additional">Garage - Additional</option>
+        <option value="Carport">Carport</option>
+        <option value="Courtyard">Courtyard</option>
+        <option value="Other">Other - Type Custom Name</option>
+      </select>
+      
+      <div id="customNameDiv" style="display:none;margin-bottom:16px;">
+        <label style="display:block;margin-bottom:8px;font-weight:700;font-size:13px;color:#333;">Custom Room Name:</label>
+        <input type="text" id="customRoomInput" placeholder="e.g., My Custom Room, She Shed, Man Cave" style="width:100%;padding:12px;border:2px solid #0a1931;border-radius:8px;font-size:15px;">
+      </div>
+      
+      <div style="display:flex;gap:12px;">
+        <button onclick="document.getElementById('addRoomModal').remove()" style="flex:1;background:#fff;border:2px solid #0a1931;padding:12px;border-radius:8px;font-weight:800;">Cancel</button>
+        <button onclick="confirmAddCustomRoom()" style="flex:1;background:#0a1931;color:#FFD500;border:none;padding:12px;border-radius:8px;font-weight:800;">Add Room</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  
+  // Handle dropdown change
+  const select = document.getElementById('roomTypeSelect');
+  const customDiv = document.getElementById('customNameDiv');
+  select.addEventListener('change', function(){
+    if(this.value === 'Other' || this.value === ''){
+      customDiv.style.display = 'block';
+      document.getElementById('customRoomInput').focus();
+    } else {
+      customDiv.style.display = 'none';
+    }
+  });
+  
+  // Close on outside click
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) modal.remove();
+  });
+}
+
+function confirmAddCustomRoom(){
+  const select = document.getElementById('roomTypeSelect');
+  const customInput = document.getElementById('customRoomInput');
+  let name = select.value;
+  
+  if(!name){
+    alert('Please select a room type!');
+    return;
+  }
+  
+  if(name === 'Other'){
+    name = customInput.value.trim();
+    if(!name){
+      alert('Please enter custom room name!');
+      customInput.focus();
+      return;
+    }
+  }
+  
+  const cleanName = name.trim();
+  if(ROOMS.find(r=>r.name===cleanName)){
+    alert('Room "'+cleanName+'" already exists!');
+    return;
+  }
+  
+  const newRoom = {
+    name: cleanName,
+    items: [
+      {label: cleanName + ' - Doors - Operation / Lock / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Windows - Operation / Screens / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Lights / Electrical - Operation / Outlets / GFCI / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Walls / Ceilings / Floors / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Toilet - Operation / Flush / Leaks / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Sink - Faucet / Drain / Leaks / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Tub/Shower - Type / Faucet / Drain / Leaks / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Cabinets / Counter - Type / Doors / Hardware / Condition', type:"I,NI,NP,D"},
+      {label: cleanName + ' - Other / Notes - Condition', type:"I,NI,NP,D"}
+    ]
+  };
+  ROOMS.push(newRoom);
+  try {
+    let customRooms = [];
+    const saved = localStorage.getItem('uhri_custom_rooms');
+    if(saved) customRooms = JSON.parse(saved);
+    customRooms.push(newRoom);
+    localStorage.setItem('uhri_custom_rooms', JSON.stringify(customRooms));
+  } catch(e){}
+  document.getElementById('addRoomModal').remove();
+  renderRooms();
+  showToast('✅ Added room: '+cleanName);
+  setTimeout(()=>openRoom(cleanName), 500);
+}
+
+function addItemToRoom(roomName){
+  const existing = document.getElementById('addItemModal');
+  if(existing) existing.remove();
+  const modal = document.createElement('div');
+  modal.id='addItemModal';
+  modal.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10002;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML=`<div style="background:#fff;border-radius:16px;padding:24px;max-width:400px;width:100%;"><h3 style="margin:0 0 12px 0;color:#0a1931;font-size:16px;font-weight:900;">➕ Add Item to ${roomName}</h3><input id="newItemInput" placeholder="e.g., Jacuzzi Tub, Wet Bar" style="width:100%;padding:12px;border:2px solid #0a1931;border-radius:8px;font-size:15px;margin-bottom:8px;"><input id="newItemDesc" placeholder="Description / Condition (e.g., I,NI,NP,D / Good / Damaged)" style="width:100%;padding:12px;border:2px solid #ccc;border-radius:8px;font-size:14px;margin-bottom:12px;" value="I,NI,NP,D - Condition"><div style="display:flex;gap:10px;"><button onclick="document.getElementById('addItemModal').remove()" style="flex:1;background:#fff;border:2px solid #0a1931;padding:12px;border-radius:10px;font-weight:800;">Cancel</button><button id="confirmAddItemBtn" style="flex:1;background:#0a1931;color:#FFD500;padding:12px;border-radius:10px;font-weight:900;border:none;">Add</button></div></div>`;
+  document.body.appendChild(modal);
+  const input = document.getElementById('newItemInput');
+  input.focus();
+  const confirm = ()=>{
+    const itemLabel = input.value.trim();
+    const itemDesc = document.getElementById('newItemDesc').value.trim() || "I,NI,NP,D - Condition";
+    if(!itemLabel) return;
+    const room = ROOMS.find(r=>r.name===roomName);
+    if(!room) return;
+    room.items.push({label: roomName + ' - ' + itemLabel + ' - ' + itemDesc, type:itemDesc});
+    try{
+      const saved = localStorage.getItem('uhri_custom_rooms');
+      if(saved){
+        let customRooms = JSON.parse(saved);
+        const idx = customRooms.findIndex(cr=>cr.name===roomName);
+        if(idx !== -1){
+          customRooms[idx]=room;
+          localStorage.setItem('uhri_custom_rooms', JSON.stringify(customRooms));
+        }
+      }
+    }catch(e){}
+    modal.remove();
+    openRoom(roomName);
+    showToast('✅ Added item: '+itemLabel+' ('+itemDesc+')');
+  };
+  document.getElementById('confirmAddItemBtn').onclick=confirm;
+  input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') confirm(); if(e.key==='Escape') modal.remove(); });
+  return;
+}
+function addItemToRoom_OLD_UNUSED(roomName){
+  const itemLabel = prompt('Enter item to add to '+roomName+' (e.g., Jacuzzi Tub, Wet Bar, Fireplace):');
+  if(!itemLabel || !itemLabel.trim()) return;
+  const room = ROOMS.find(r=>r.name===roomName);
+  if(!room) return;
+  room.items.push({label: roomName + ' - ' + itemLabel.trim() + ' - Condition', type:"I,NI,NP,D"});
+  // Update custom rooms storage if it's a custom room
+  try {
+    const saved = localStorage.getItem('uhri_custom_rooms');
+    if(saved){
+      let customRooms = JSON.parse(saved);
+      const idx = customRooms.findIndex(cr=>cr.name===roomName);
+      if(idx !== -1){
+        customRooms[idx] = room;
+        localStorage.setItem('uhri_custom_rooms', JSON.stringify(customRooms));
+      }
+    }
+  } catch(e){}
+  // Re-render current room
+  openRoom(roomName);
+  showToast('✅ Added item: '+itemLabel.trim());
+}
+
+function resetCustomRooms(){
+  if(!confirm('Remove all custom rooms? This cannot be undone.')) return;
+  try {
+    localStorage.removeItem('uhri_custom_rooms');
+    // Reload page to reset ROOMS to original
+    location.reload();
+  } catch(e){}
+}
+
+// Load custom rooms on startup
+loadCustomRooms();
+
+
+// BUILD 46 - BREAKER TABLE helpers - Main + Sub Panel - updates Total + Value for report
+function updateBreakerTable(id, sizes){
+  try{
+    let total=0; let parts=[];
+    sizes.forEach(sz=>{
+      const el=document.getElementById(id+'_breaker_'+sz);
+      let v=0;
+      if(el){
+        v=parseInt(el.value||'0',10)||0;
+        try{ localStorage.setItem(id+'_breaker_'+sz, String(v)); }catch(e){}
+        if(v>0) parts.push(sz+' Amp: '+v);
+      }
+      total+=v;
+    });
+    const totalEl=document.getElementById(id+'_total');
+    if(totalEl) totalEl.textContent=total;
+    const valEl=document.getElementById(id+'_value');
+    const summary = parts.length ? parts.join(', ')+' | TOTAL: '+total+' breakers' : '';
+    if(valEl){
+      valEl.value=summary;
+      try{ localStorage.setItem(id+'_value', summary); }catch(e){}
+    }
+    // Also restore total on load
+    return total;
+  }catch(e){ console.log('updateBreakerTable error', e); }
+}
+function clearBreakerTable(id, sizes){
+  try{
+    sizes.forEach(sz=>{
+      const el=document.getElementById(id+'_breaker_'+sz);
+      if(el){ el.value=''; try{ localStorage.removeItem(id+'_breaker_'+sz); }catch(e){} }
+    });
+    updateBreakerTable(id, sizes);
+  }catch(e){}
+}
+// READABLE AGREEMENT - Expandable - Easier for customer to read - Safe: uses separate modal, never touches agreement-wrapper fullscreen
+function openReadableAgreement(){
+  try{
+    const terms = document.getElementById('termsBox');
+    const body = document.getElementById('readableAgreementBody');
+    const modal = document.getElementById('readableAgreementModal');
+    if(terms && body) body.innerHTML = terms.innerHTML;
+    if(modal){ modal.classList.add('show'); modal.style.display='block'; }
+    document.body.style.overflow='hidden';
+    if(modal) modal.scrollTop=0;
+  }catch(e){ alert('Readable error: '+e.message); }
+}
+function closeReadableAgreement(){
+  try{
+    const modal = document.getElementById('readableAgreementModal');
+    if(modal){ modal.classList.remove('show'); modal.style.display='none'; }
+    document.body.style.overflow='';
+    // Scroll back to agreement where they were
+    const w=document.getElementById('agreementWrapper');
+    if(w) w.scrollIntoView({behavior:'smooth'});
+  }catch(e){}
+}
+function returnToReportFromReadable(){
+  try{
+    const modal = document.getElementById('readableAgreementModal');
+    if(modal){ modal.classList.remove('show'); modal.style.display='none'; }
+    document.body.style.overflow='';
+    // Same as Later: hide agreement, show report - Return to Report button
+    if(typeof skipAgreement==='function'){ skipAgreement(); }
+    else {
+      const w=document.getElementById('agreementWrapper');
+      if(w) w.style.display='none';
+      const m=document.getElementById('minimizedBar');
+      if(m) m.style.display='block';
+    }
+    setTimeout(()=>{
+      const g=document.getElementById('roomGrid');
+      if(g) g.scrollIntoView({behavior:'smooth', block:'start'});
+    },150);
+  }catch(e){ alert('Return to Report error: '+e.message); }
+}
+function openRoom(name){
+  const room = ROOMS.find(r=>r.name===name);
+  if(!room) return;
+  const detail=document.getElementById('detailPanel');
+  let html=`<h3>${name} - <span style="font-size:10px;">${document.getElementById('currentStandardLabel').innerText} | ${document.getElementById('propState').value || 'Universal'}</span></h3>`;
+  // TOP NEXT - also at top so you don't have to scroll to bottom to find Next
+  {
+    const _currIdxTop = ROOMS.findIndex(r=>r.name===name);
+    const _nextTop = ROOMS[_currIdxTop+1];
+    const _prevTop = ROOMS[_currIdxTop-1];
+    if(_nextTop){
+      const _safeNextTop = _nextTop.name.replace(/'/g, "\\'");
+      html += `<div style="display:flex;gap:8px;margin-bottom:12px;position:sticky;top:65px;z-index:99;background:#fff;padding:6px 0;border-bottom:2px solid #0a1931;"><button style="flex:1;background:#FFD500;color:#000;border:2px solid #0a1931;padding:12px;border-radius:10px;font-weight:900;font-size:14px;" onclick="try{saveSection('${name}');}catch(e){} openRoom('${_safeNextTop}'); setTimeout(()=>document.getElementById('detailPanel').scrollIntoView({behavior:'smooth'}),50);">Next → ${_nextTop.name} ➡️</button>${_prevTop ? `<button style="background:#fff;color:#0a1931;border:2px solid #0a1931;padding:12px 14px;border-radius:10px;font-weight:800;font-size:13px;" onclick="try{saveSection('${name}');}catch(e){} openRoom('${_prevTop.name.replace(/'/g, "\\'")}'); setTimeout(()=>document.getElementById('detailPanel').scrollIntoView({behavior:'smooth'}),50);">⬅ Prev</button>` : ''}</div>`;
+    }
+  }
+  room.items.forEach((item,i)=>{
+    const id=name.replace(/\W/g,'_')+'_'+i;
+    // SECTION 18 STATEMENT - Read only, no I/NI/NP/D, no Condition, no Photo - just to read
+    if(item.type==='STATEMENT_TEXT'){
+      html+=`<div class="trec-item" style="border:2px solid #0a1931;background:#fff;">
+        <label style="background:#0a1931;color:#FFD500;padding:8px 10px;margin:-10px -10px 10px -10px;border-radius:8px 8px 0 0;">📋 STATEMENT AND ACCEPTANCE 1-8</label>
+        <div style="font-size:14px;line-height:1.6;color:#111;padding:4px 0;">
+          <p><strong>Statement 1 — Environmental Hazards:</strong> Inspector is not required to inspect for mold, asbestos, lead, radon, or other environmental hazards. If concerned, consult a specialist.</p>
+          <p><strong>Statement 2 — Heat Exchanger / Furnace:</strong> Heat exchanger is not disassembled. Furnace inspected visually only.</p>
+          <p><strong>Statement 3 — GFCI:</strong> GFCI protection may not have been a requirement at time of construction. Inspector notes if present / tested.</p>
+          <p><strong>Statement 4 — Reinspection:</strong> Client agrees to notify Inspector within 7 days of any complaint and allow reinspection before repairs. Failure voids claim.</p>
+          <p><strong>Statement 5 — Expert:</strong> Expert witness / court testimony $650/hr if required.</p>
+          <p><strong>Statement 6 — Litigation Limited Fee:</strong> Liability limited to fee paid. Report is confidential for client only.</p>
+          <p><strong>Statement 7 — Payment Due:</strong> Fee $375 Total $375 - No Tax Added - due at inspection. Reinspection $255/hr.</p>
+          <p><strong>Statement 8 — Warranty Disclaimer:</strong> This is NOT a warranty, guarantee, or insurance. No prediction of future performance.</p>
+          <p style="background:#FFF8DC;border:1px solid #FFD500;padding:10px;border-radius:8px;"><strong>Buyer Present:</strong> Yes / No &nbsp;•&nbsp; <strong>Fee:</strong> $375 &nbsp;•&nbsp; <strong>Total:</strong> $375 - No Tax &nbsp;•&nbsp; <strong>Inspector:</strong> Patrick Uhri &nbsp;•&nbsp; <strong>Date:</strong> Inspection Date &nbsp;•&nbsp; <strong>Read and Approved:</strong> By signing Pre-Inspection Agreement above, client has read and approved Statements 1-8.</p>
+
+        </div>
+      </div>`;
+      return;
+    }
+    // BUILD 46 - BREAKER TABLE - Main + Sub Panel - like PDF: Size | How many
+    if(item.type==='BREAKER_TABLE'){
+      const isMain = item.panel==='main';
+      const sizes = isMain ? [15,20,30,40,50,60,100] : [15,20,30,40,50,60];
+      const title = isMain ? 'MAIN PANEL - BREAKER COUNT' : 'SUB PANEL(S) - BREAKER COUNT';
+      let tableRows = sizes.map(sz=>`
+        <tr>
+          <td style="padding:8px;border:1px solid #ddd;font-weight:800;text-align:center;background:#f7f7f5;">${sz} Amp</td>
+          <td style="padding:4px;border:1px solid #ddd;text-align:center;">
+            <input type="number" min="0" inputmode="numeric" id="${id}_breaker_${sz}" value="" placeholder="0" style="width:80px;padding:10px;text-align:center;font-size:16px;font-weight:800;border:2px solid #0a1931;border-radius:8px;" oninput="updateBreakerTable('${id}', ${JSON.stringify(sizes).replace(/"/g,'&quot;')})" onchange="updateBreakerTable('${id}', ${JSON.stringify(sizes).replace(/"/g,'&quot;')})">
+          </td>
+        </tr>`).join('');
+      html+=`<div class="trec-item" style="border:2px solid #0a1931;">
+        <label style="background:#0a1931;color:#FFD500;padding:8px 10px;margin:-10px -10px 10px -10px;border-radius:8px 8px 0 0;">${item.label}</label>
+        <div style="font-size:12px;color:#333;margin-bottom:8px;">Tap each Count box and type how many breakers of that size. Total updates automatically. Like your PDF panel schedule.</div>
+        <table style="width:100%;border-collapse:collapse;">
+          <tr><th style="padding:8px;background:#0a1931;color:#FFD500;border:1px solid #0a1931;">BREAKER SIZE</th><th style="padding:8px;background:#0a1931;color:#FFD500;border:1px solid #0a1931;">HOW MANY</th></tr>
+          ${tableRows}
+          <tr><td style="padding:10px;border:2px solid #0a1931;font-weight:900;text-align:center;background:#FFD500;">TOTAL</td><td style="padding:10px;border:2px solid #0a1931;font-weight:900;text-align:center;background:#FFD500;font-size:18px;"><span id="${id}_total">0</span></td></tr>
+        </table>
+        <input type="hidden" id="${id}_value" value="">
+        <input type="hidden" id="${id}_status" value="I">
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <select id="${id}_cond" style="flex:1;padding:10px;border:2px solid #0a1931;border-radius:8px;"><option value="">Condition ↓</option><option>Appeared in good condition</option><option>Appeared to operate normally</option><option>Appeared in fair condition</option><option>Appeared in poor condition</option><option>Tested - Appeared to operate normally</option><option>Tested faulty</option><option>Flawed</option><option>Deficient</option><option>Not Present</option><option>Not Inspected</option><option>Needs Repair</option><option>Safety Issue</option><option>Monitor</option><option>Good</option><option>Fair</option><option>Poor</option><option>Other</option></select>
+          <button type="button" onclick="clearBreakerTable('${id}', ${JSON.stringify(sizes).replace(/"/g,'&quot;')})" style="padding:10px 14px;background:#fff;border:2px solid #0a1931;border-radius:8px;font-weight:800;">Clear</button>
+        </div>
+        <textarea class="trec-comment" id="${id}_comment" placeholder="Comment - e.g. Main panel 200A, 24 breakers total"></textarea>
+      </div>`;
+      return;
+    }
+    // ONE-RULE FIX: Only Condition- items use parsed opts as Condition. Type items use them as Type. Everything else uses full Condition list.
+    const _labelTrim = item.label.trim().toLowerCase();
+    const _isCondItem = _labelTrim.startsWith('condition');
+    const _isTypeItem2 = _labelTrim.startsWith('type') || _labelTrim.includes('type -') || _labelTrim.includes('trim type') || _labelTrim.startsWith('windows') || _labelTrim.includes('windows - type') || _labelTrim.includes('- windows - type');
+    let condOpts = '';
+    let labelParts = item.label.split(' - ');
+    // Keep parsed opts for Type / Condition items only
+    let _parsedOpts = [];
+    if(labelParts.length > 1){
+      // FIX MULTI-DASH: Bedroom 1 - Windows - Type ... -> labelParts[1] is "Windows", not the Type list. Use the part that contains "Type" if present, else labelParts[1]
+      let optsStr = labelParts[1];
+      // If label has "Type" in a later part, use that part
+      for(let _lp of labelParts){ if(_lp.toLowerCase().includes('type')){ optsStr = _lp; break; } }
+      // If no Type part, but label has 3+ parts and last part has "/", use last part
+      if(!optsStr.toLowerCase().includes('type') && labelParts.length > 2 && labelParts[labelParts.length-1].includes('/')){
+        optsStr = labelParts[labelParts.length-1];
+      }
+      optsStr = optsStr.replace(/\s*\/ Condition.*$/i, '');
+      let opts = optsStr.split(' / ').map(s=>s.trim()).filter(s=>s && s.length>0 && !s.toLowerCase().includes('condition'));
+      if(opts.length > 1 && opts.length < 15){
+        _parsedOpts = opts.map(opt=>opt.replace(/Condition.*$/i, '').trim().replace(/^Type\s+/i, '').trim()).filter(Boolean);
+      }
+    }
+    if(_isCondItem && _parsedOpts.length){
+      _parsedOpts.forEach(opt=>{ condOpts += `<option value="${opt}">${opt}</option>`; });
+      // Also add full list as fallback after the specific ones, so inspector can still pick Appeared in good condition
+      condOpts += `<option value="Appeared in good condition">Appeared in good condition</option><option value="Appeared to operate normally">Appeared to operate normally</option><option value="Appeared in fair condition">Appeared in fair condition</option><option value="Appeared in poor condition">Appeared in poor condition</option>`;
+    } else if(_isTypeItem2 && _parsedOpts.length){
+      _parsedOpts.forEach(opt=>{ condOpts += `<option value="${opt}">${opt}</option>`; });
+    } else {
+      // Everything else: do NOT use sub-features as Condition. Fall through to full list below.
+      condOpts = '';
+    }
+    if(!condOpts){
+      condOpts = `<option value="Appeared in good condition">Appeared in good condition</option><option value="Appeared to operate normally">Appeared to operate normally</option><option value="Appeared in fair condition">Appeared in fair condition</option><option value="Appeared in poor condition">Appeared in poor condition</option><option value="Tested - Appeared to operate normally">Tested - Appeared to operate normally</option><option value="Tested faulty">Tested faulty</option><option value="Flawed">Flawed</option><option value="Deficient">Deficient</option><option value="Not Present">Not Present</option><option value="Not Inspected">Not Inspected</option><option value="Needs Repair">Needs Repair</option><option value="Safety Issue">Safety Issue</option><option value="Monitor">Monitor</option><option value="Good">Good</option><option value="Fair">Fair</option><option value="Poor">Poor</option>`;
+    }
+    condOpts += `<option value="Other">Other</option>`;
+    // FIX - TYPE vs CONDITION - If label starts with Type, parsed opts are TYPE, not Condition. Show TWO dropdowns: Type + Condition (full list)
+    const isTypeItem = (item.label.trim().toLowerCase().startsWith('type') || item.label.toLowerCase().includes('type -') || item.label.toLowerCase().includes('trim type') || item.label.trim().toLowerCase().startsWith('windows') || item.label.toLowerCase().includes('windows - type') || item.label.toLowerCase().includes('- windows - type')) && !item.label.trim().toLowerCase().startsWith('condition');
+    const fullCondList = `<option value="Appeared in good condition">Appeared in good condition</option><option value="Appeared to operate normally">Appeared to operate normally</option><option value="Appeared in fair condition">Appeared in fair condition</option><option value="Appeared in poor condition">Appeared in poor condition</option><option value="Tested - Appeared to operate normally">Tested - Appeared to operate normally</option><option value="Tested faulty">Tested faulty</option><option value="Flawed">Flawed</option><option value="Deficient">Deficient</option><option value="Not Present">Not Present</option><option value="Not Inspected">Not Inspected</option><option value="Needs Repair">Needs Repair</option><option value="Safety Issue">Safety Issue</option><option value="Monitor">Monitor</option><option value="Good">Good</option><option value="Fair">Fair</option><option value="Poor">Poor</option><option value="Other">Other</option>`;
+    if(isTypeItem){
+      // Type dropdown = parsed opts (Gas, Electric, Tank, Tankless...), Condition dropdown = full conditions
+      const typeOpts = condOpts; // parsed from label
+      html+=`<div class="trec-item"><label>${item.label}</label><div class="trec-row"><select id="${id}_status"><option value="">I/NI/NP/D</option><option value="I">I - Inspected</option><option value="NI">NI - Not Inspected</option><option value="NP">NP - Not Present</option><option value="D">D - Deficient</option></select><select id="${id}_type"><option value="">Type ↓</option>${typeOpts}</select><select id="${id}_cond"><option value="">Condition ↓</option>${fullCondList}</select></div><div class="trec-row" style="margin-top:6px;"><input type="text" id="${id}_value" placeholder="${item.label.toLowerCase().includes('window') ? 'How many windows? - e.g. 3' : 'Value - e.g. Size, Location'}"></div><div style="font-size:11px;color:#0a1931;margin-top:4px;">${item.label.toLowerCase().includes('window') ? 'Type above + How many windows in Value — e.g. Type: Double Hung, Value: 3' : ''}</div><div class="photo-row"><button class="photo-btn" onclick="triggerPhoto('${id}')">📷 Photo</button><img id="img_${id}" class="photo-preview" onclick="viewPhoto('${id}')"><span id="count_${id}" class="photo-count"></span></div><textarea class="trec-comment" id="${id}_comment" placeholder="Comment"></textarea></div>`;
+    } else {
+      html+=`<div class="trec-item"><label>${item.label}</label><div class="trec-row"><select id="${id}_status"><option value="">I/NI/NP/D</option><option value="I">I - Inspected</option><option value="NI">NI - Not Inspected</option><option value="NP">NP - Not Present</option><option value="D">D - Deficient</option></select><select id="${id}_cond"><option value="">Condition ↓</option>${condOpts}</select><input type="text" id="${id}_value" placeholder="Value"></div><div class="photo-row"><button class="photo-btn" onclick="triggerPhoto('${id}')">📷 Photo</button><img id="img_${id}" class="photo-preview" onclick="viewPhoto('${id}')"><span id="count_${id}" class="photo-count"></span></div><textarea class="trec-comment" id="${id}_comment" placeholder="Comment"></textarea></div>`;
+    }
+  });
+  // NO ADD ITEM for Section 18 - Statement section should not have Add Item, it confuses - only Save / Close / Next / Prev
+  let isStatementSection = name.startsWith('18.');
+  let addItemBtn = '';
+  if(!isStatementSection){
+    addItemBtn = `<div style="margin-bottom:12px;display:flex;gap:8px;"><button style="flex:1;background:#FFD500;color:#000;border:2px solid #000;padding:14px;border-radius:10px;font-weight:900;font-size:15px;" onclick="addItemToRoom('${name}')">➕ ADD ITEM to ${name}</button></div>`;
+  }
+  html = addItemBtn + html;
+  // NEXT BUTTON - At end of each area, goes to next area
+  const currIdx = ROOMS.findIndex(r=>r.name===name);
+  const nextRoom = ROOMS[currIdx+1];
+  const prevRoom = ROOMS[currIdx-1];
+  let nextBtnHtml = '';
+  if(nextRoom){
+    const safeNext = nextRoom.name.replace(/'/g, "\\'");
+    // STICKY NEXT - always visible at bottom, not buried after 17 items
+    nextBtnHtml = `<div style="position:sticky;bottom:0;z-index:100;background:#fff;padding:10px 0 6px 0;border-top:3px solid #0a1931;margin-top:12px;"><button style="width:100%;background:#FFD500;color:#000;border:3px solid #0a1931;padding:18px;border-radius:12px;font-weight:900;font-size:17px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.2);" onclick="try{saveSection('${name}');}catch(e){} openRoom('${safeNext}'); setTimeout(()=>document.getElementById('detailPanel').scrollIntoView({behavior:'smooth'}),50);">Next → ${nextRoom.name} ➡️</button><div style="text-align:center;font-size:11px;color:#666;margin-top:6px;">Tap Next to go to next area — Saves this area first</div></div>`;
+  } else {
+    nextBtnHtml = `<div style="position:sticky;bottom:0;z-index:100;background:#fff;padding:10px 0 6px 0;border-top:3px solid #0a1931;margin-top:12px;"><button style="width:100%;background:#0a1931;color:#FFD500;border:none;padding:18px;border-radius:12px;font-weight:900;font-size:17px;cursor:pointer;" onclick="try{saveSection('${name}');}catch(e){} document.getElementById('detailPanel').style.display='none'; document.getElementById('roomGrid').scrollIntoView({behavior:'smooth'});">✅ Done — Back to All Sections</button></div>`;
+  }
+  let prevBtnHtml = '';
+  if(prevRoom){
+    const safePrev = prevRoom.name.replace(/'/g, "\\'");
+    prevBtnHtml = `<div style="margin-top:8px;"><button style="width:100%;background:#fff;color:#0a1931;border:2px solid #0a1931;padding:12px;border-radius:10px;font-weight:800;font-size:14px;cursor:pointer;" onclick="try{saveSection('${name}');}catch(e){} openRoom('${safePrev}')">⬅ Prev — ${prevRoom.name}</button></div>`;
+  }
+  // Bottom row: No ADD ITEM for Section 18 - just Save / Close, cleaner
+  if(isStatementSection){
+    html+=`<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;"><button style="flex:1;background:#0a1931;color:#FFD500;border:none;padding:14px;border-radius:10px;font-weight:900;font-size:15px;" onclick="saveSection('${name}')">💾 Save Section</button><button style="flex:1;background:#fff;border:2px solid #0a1931;padding:12px;border-radius:8px;font-weight:800;" onclick="document.getElementById('detailPanel').style.display='none'">Close</button></div><div style="text-align:center;font-size:11px;color:#666;margin-top:6px;">Section 18 is Statements + Appliances — No Add Item here — Use Section 21 Custom Items if you need to add something extra</div>` + nextBtnHtml + prevBtnHtml;
+  } else {
+    html+=`<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;"><button style="flex:1;background:#0a1931;color:#FFD500;border:none;padding:14px;border-radius:10px;font-weight:900;font-size:15px;" onclick="saveSection('${name}')">💾 Save Section</button><button style="flex:1;background:#FFD500;color:#000;border:2px solid #000;padding:14px;border-radius:10px;font-weight:900;font-size:15px;" onclick="addItemToRoom('${name}')">➕ ADD ITEM</button><button style="flex:1;background:#fff;border:2px solid #0a1931;padding:12px;border-radius:8px;font-weight:800;" onclick="document.getElementById('detailPanel').style.display='none'">Close</button></div>` + nextBtnHtml + prevBtnHtml;
+  }
+  detail.innerHTML=html;
+  setTimeout(()=>{
+    room.items.forEach((item, idx)=>{
+      const id=name.replace(/\W/g,'_')+'_'+idx;
+      // Restore breaker table counts
+      if(item.type==='BREAKER_TABLE'){
+        const sizes = item.panel==='main' ? [15,20,30,40,50,60,100] : [15,20,30,40,50,60];
+        sizes.forEach(sz=>{
+          const el=document.getElementById(id+'_breaker_'+sz);
+          if(el){
+            const saved=localStorage.getItem(id+'_breaker_'+sz);
+            if(saved) el.value=saved;
+          }
+        });
+        updateBreakerTable(id, sizes);
+      }
+      ['status','cond','value','comment','type'].forEach(suf=>{
+        const el=document.getElementById(id+'_'+suf);
+        if(el){
+          const saved=localStorage.getItem(id+'_'+suf);
+          if(saved) el.value=saved;
+          el.addEventListener('change', ()=>{localStorage.setItem(id+'_'+suf, el.value);});
+          el.addEventListener('input', ()=>{localStorage.setItem(id+'_'+suf, el.value);});
+        }
+      });
+    });
+  },100);
+  detail.style.display='block';
+  detail.scrollIntoView({behavior:'smooth'});
+}
+
+function saveSection(name){ 
+  let cnt=0;
+  for(let i=0;i<localStorage.length;i++){ if(localStorage.key(i).startsWith(name.replace(/\W/g,'_'))) cnt++; }
+  showToast('💾 '+name+' saved! '+cnt+' fields');
+}
+
+function minimizeAgreement(){document.getElementById('agreementWrapper').style.display='none';document.getElementById('actionBar').style.display='none';document.getElementById('minimizedBar').style.display='block';window.scrollTo({top:0,behavior:'smooth'});}
+function skipAgreement(){
+  // NO confirm dialog - direct skip for WKWebView compatibility
+  localStorage.setItem('uhri_agreement_skipped',new Date().toISOString());
+  minimizeAgreement();
+  showToast('⏩ Agreement SKIPPED - You can sign later - Starting inspection');
+}
+function closeAgreement(){minimizeAgreement();}
+function restoreAgreement(){document.getElementById('agreementWrapper').style.display='block';document.getElementById('actionBar').style.display='flex';document.getElementById('minimizedBar').style.display='none';window.scrollTo({top:0,behavior:'smooth'});}
+function toggleInstructions(){
+  const p=document.getElementById('instructionsPanel');
+  p.style.display=p.style.display==='none'?'block':'none';
+  if(p.style.display==='block'){
+    document.getElementById('companySettings').style.display='none';
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+}
+function toggleCompanySettings(){
+  const cs=document.getElementById('companySettings');
+  cs.style.display=cs.style.display==='none'?'block':'none';
+  if(cs.style.display==='block'){
+    document.getElementById('instructionsPanel').style.display='none';
+    loadCompanySettings();
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+}
+function handleLogoUpload(event){
+  const file=event.target.files[0];
+  if(!file) return;
+  if(file.size>2000000){showToast('Logo too big - under 2MB');return;}
+  const reader=new FileReader();
+  reader.onload=function(e){
+    const dataUrl=e.target.result;
+    localStorage.setItem('uhri_company_logo',dataUrl);
+    updateLogoDisplay(dataUrl);
+    showToast('Logo saved! Appears on top bar and reports');
+  };
+  reader.readAsDataURL(file);
+}
+function updateLogoDisplay(dataUrl){
+  if(dataUrl){
+    document.getElementById('logoPreview').src=dataUrl;
+    document.getElementById('logoPreview').style.display='block';
+    document.getElementById('noLogoText').style.display='none';
+    document.getElementById('topLogo').src=dataUrl;
+    document.getElementById('topLogo').style.display='block';
+  } else {
+    document.getElementById('logoPreview').style.display='none';
+    document.getElementById('noLogoText').style.display='block';
+    document.getElementById('topLogo').style.display='none';
+  }
+}
+function removeLogo(){
+  localStorage.removeItem('uhri_company_logo');
+  updateLogoDisplay(null);
+  document.getElementById('logoFileInput').value='';
+  showToast('Logo removed');
+}
+function loadCompanySettings(){
+  const logo=localStorage.getItem('uhri_company_logo');
+  updateLogoDisplay(logo);
+  const fields=['compName','compPhone','compEmail','compTrec','compInspector','compAddr','compCity','compState','compCountry','compWeb','compStandard'];
+  fields.forEach(id=>{
+    const saved=localStorage.getItem('uhri_'+id);
+    if(saved) document.getElementById(id).value=saved;
+  });
+  updateAgreementLabels();
+}
+function saveCompanySettings(){
+  const fields=['compName','compPhone','compEmail','compTrec','compInspector','compAddr','compCity','compState','compCountry','compWeb','compStandard'];
+  fields.forEach(id=>{
+    localStorage.setItem('uhri_'+id, document.getElementById(id).value);
+  });
+  document.getElementById('topCompanyName').innerText=document.getElementById('compName').value || 'YOUR COMPANY';
+  document.getElementById('topPhone').innerText=document.getElementById('compPhone').value || 'Set up in Company';
+  updateAgreementLabels();
+  showToast('🌎 Company SAVED! '+document.getElementById('compState').value+' / '+document.getElementById('compCountry').value);
+  toggleCompanySettings();
+}
+function updateAgreementLabels(){
+  const state=document.getElementById('propState').value || document.getElementById('compState').value || 'Universal';
+  const country=document.getElementById('propCountry').value || document.getElementById('compCountry').value || 'USA';
+  const standard=document.getElementById('compStandard').value || 'generic';
+  const comp=document.getElementById('compName').value || localStorage.getItem('uhri_compName') || 'Your Company';
+  const standardLabel={generic:'Generic International',trec:'TREC - Texas',ashi:'ASHI',internachi:'InterNACHI',nahi:'NAHI'}[standard]||standard;
+  const el1=document.getElementById('agreementStateLabel'); if(el1) el1.innerText=state+' / '+country+' - '+standardLabel;
+  const el2=document.getElementById('currentStandardLabel'); if(el2) el2.innerText=standardLabel;
+  ['termsState','termsState2','chkState'].forEach(id=>{ const el=document.getElementById(id); if(el) el.innerText=state; });
+  ['termsCountry'].forEach(id=>{ const el=document.getElementById(id); if(el) el.innerText=country; });
+  const ts=document.getElementById('termsStandard'); if(ts) ts.innerText=standardLabel;
+  const cs=document.getElementById('chkStandard'); if(cs) cs.innerText=standardLabel;
+  const cc=document.getElementById('chkCompany'); if(cc) cc.innerText=comp;
+  const at=document.getElementById('agreementTitle'); if(at) at.innerText=standard==='trec'?'TREC HOME INSPECTION AGREEMENT':'HOME INSPECTION AGREEMENT';
+}
+function signAndClose(){
+  if(!document.getElementById('chk1').checked || !document.getElementById('chk2').checked){showToast('Please check both boxes to sign');return;}
+  localStorage.setItem('uhri_agreement_signed',new Date().toISOString());
+  localStorage.setItem('uhri_customer',document.getElementById('custName').value);
+  showToast('🌎 Agreement SIGNED for '+document.getElementById('propState').value+' / '+document.getElementById('propCountry').value+'!');
+  setTimeout(()=>{ minimizeAgreement(); }, 800);
+}
+
+function showToast(msg){
+  const toast=document.getElementById('saveToast');
+  if(!toast) { console.log(msg); return; }
+  toast.innerText=msg;
+  toast.style.display='block';
+  setTimeout(()=>{ toast.style.display='none'; }, 3500);
+}
+
+function previewReport(){
+  try{
+    const cust = document.getElementById('custName')?.value || localStorage.getItem('uhri_customer') || 'Customer';
+    const addr = document.getElementById('propAddr')?.value || 'Property Address';
+    const city = document.getElementById('propCity')?.value || '';
+    const compName = localStorage.getItem('uhri_compName') || document.getElementById('topCompanyName').innerText;
+    const compPhone = localStorage.getItem('uhri_compPhone') || '';
+    const compEmail = localStorage.getItem('uhri_compEmail') || '';
+    const compState = localStorage.getItem('uhri_compState') || document.getElementById('propState').value || 'Universal';
+    const compCountry = localStorage.getItem('uhri_compCountry') || document.getElementById('propCountry').value || 'USA';
+    const compLicense = localStorage.getItem('uhri_compTrec') || '';
+    const standard = localStorage.getItem('uhri_compStandard') || document.getElementById('compStandard').value || 'generic';
+    const inspector = localStorage.getItem('uhri_compInspector') || '';
+    const logo = localStorage.getItem('uhri_company_logo') || '';
+    const standardLabel = {generic:'Generic International',trec:'TREC - Texas',ashi:'ASHI',internachi:'InterNACHI'}[standard]||standard;
+    
+    let html = `<div style="display:flex;justify-content:space-between;align-items:start;gap:10px;"><div><h1 style="margin:0;color:#0a1931;">${compName}</h1><p style="margin:4px 0;font-size:11px;">${compState} / ${compCountry} | ${standardLabel}<br>${compPhone} ${compEmail ? ' | '+compEmail : ''}<br>${compLicense ? 'License: '+compLicense : ''}</p></div>${logo ? `<img src="${logo}" style="max-width:90px;max-height:60px;border:1px solid #ccc;border-radius:6px;">` : ''}</div><hr style="border:2px solid #FFD500;margin:12px 0;"><h2>🌎 Home Inspection Report</h2><p><b>Client:</b> ${cust}<br><b>Property:</b> ${addr} ${city}, ${compState}, ${compCountry}<br><b>Date:</b> ${new Date().toLocaleDateString()}<br><b>Inspector:</b> ${inspector || 'N/A'}<br><b>Standard:</b> ${standardLabel}</p>`;
+    
+    const signed = localStorage.getItem('uhri_agreement_signed');
+    const skipped = localStorage.getItem('uhri_agreement_skipped');
+    html += `<h3>Agreement</h3><p>${signed ? '✅ SIGNED: '+new Date(signed).toLocaleString() : skipped ? '⏩ SKIPPED: '+new Date(skipped).toLocaleString() : '❌ Not signed'}</p><h3>Inspection Results - ${localStorage.length} saved fields</h3>`;
+    
+    let found=0;
+    for(let i=0;i<localStorage.length;i++){
+      const k=localStorage.key(i);
+      if(k && (k.includes('_status') || k.includes('_cond') || k.includes('_comment') || k.includes('_value') || k.includes('_type'))){
+        const v=localStorage.getItem(k);
+        if(v && v.trim()!==''){
+          html+=`<div style="border:1px solid #ddd;padding:6px 10px;margin:4px 0;border-radius:6px;background:#f9f9f9;font-size:12px;"><b>${k}:</b> ${v}</div>`;
+          found++;
+        }
+      }
+    }
+    if(found===0) html+=`<p style="background:#fff3cd;padding:12px;border-radius:8px;">No inspection data yet - Complete rooms first</p>`;
+    
+    // FULL AGREEMENT + STATEMENT - Included in PDF / Email / Print so client knows what they signed - Build 48
+    try{
+      const termsEl = document.getElementById('termsBox');
+      const agreementHTML = termsEl ? termsEl.innerHTML : '';
+      const clientSig = document.getElementById('clientSig')?.value || localStorage.getItem('uhri_client_sig') || '';
+      const clientSigDate = document.getElementById('clientSigDate')?.value || '';
+      const inspName = document.getElementById('inspectorName')?.value || localStorage.getItem('uhri_compInspector') || '';
+      const licNum = document.getElementById('licenseNum')?.value || localStorage.getItem('uhri_compTrec') || '';
+      const custName2 = document.getElementById('custName')?.value || cust;
+      const propAddr2 = document.getElementById('propAddr')?.value || addr;
+      html += `<div style="page-break-before:always;margin-top:24px;border:3px solid #0a1931;border-radius:12px;padding:16px;background:#fff;"><h2 style="color:#0a1931;margin-top:0;">📋 PRE-INSPECTION AGREEMENT — Full Agreement — What Client Signed</h2><p style="font-size:12px;color:#333;">This is the full Pre-Inspection Agreement the client read and signed (Read Full Agreement page). Included in this PDF / Email / Printed report so the client knows what they signed. Client: ${custName2} | Property: ${propAddr2} | Date: ${new Date().toLocaleDateString()}</p><div style="font-size:12px;line-height:1.6;border:1px solid #ddd;padding:12px;border-radius:8px;background:#f9f9f9;">${agreementHTML}</div>`;
+      html += `<h3 style="margin-top:20px;">📋 STATEMENT AND ACCEPTANCE 1-8 — What Client Accepted</h3><div style="font-size:12px;line-height:1.6;border:1px solid #ddd;padding:12px;border-radius:8px;background:#f9f9f9;"><p><strong>Statement 1 — Environmental Hazards:</strong> Inspector is not required to inspect for mold, asbestos, lead, radon, or other environmental hazards. If concerned, consult a specialist.</p><p><strong>Statement 2 — Heat Exchanger / Furnace:</strong> Heat exchanger is not disassembled. Furnace inspected visually only.</p><p><strong>Statement 3 — GFCI:</strong> GFCI protection may not have been a requirement at time of construction. Inspector notes if present / tested.</p><p><strong>Statement 4 — Reinspection:</strong> Client agrees to notify Inspector within 7 days of any complaint and allow reinspection before repairs. Failure voids claim.</p><p><strong>Statement 5 — Expert:</strong> Expert witness / court testimony $650/hr if required.</p><p><strong>Statement 6 — Litigation Limited Fee:</strong> Liability limited to fee paid. Report is confidential for client only.</p><p><strong>Statement 7 — Payment Due:</strong> Fee $375 Total $375 - No Tax Added - due at inspection. Reinspection $255/hr.</p><p><strong>Statement 8 — Warranty Disclaimer:</strong> This is NOT a warranty, guarantee, or insurance. No prediction of future performance.</p></div>`;
+      html += `<h3>✍️ Signatures — As Signed</h3><div style="border:1px solid #0a1931;padding:12px;border-radius:8px;font-size:13px;line-height:1.8;"><b>Client Signature (Type Name):</b> ${clientSig || '(Not signed yet - see Agreement page)'}<br><b>Date:</b> ${clientSigDate || new Date().toLocaleDateString()}<br><b>Inspector Name:</b> ${inspName || 'Patrick Uhri'}<br><b>License #:</b> ${licNum || ''}<br><b>Buyer Present:</b> Yes / No &nbsp;•&nbsp; <b>Fee:</b> $375 &nbsp;•&nbsp; <b>Total:</b> $375 - No Tax Added<br><b>Agreement Status:</b> ${signed ? '✅ SIGNED: '+new Date(signed).toLocaleString() : skipped ? '⏩ SKIPPED: '+new Date(skipped).toLocaleString() : '❌ Not signed'}<br><span style="font-size:11px;color:#666;">By signing, Client acknowledges receipt and agreement to this Pre-Inspection Agreement. This agreement is based on TREC Promulgated Form and International Standards. Property inspected as-is where-is on inspection date.</span></div></div>`;
+    }catch(e){ console.log('Agreement in report error', e); }
+    
+    html+=`<div style="margin-top:20px;padding:14px;background:#0a1931;border-radius:10px;display:flex;gap:8px;flex-wrap:wrap;position:sticky;bottom:0;"><button type="button" onclick="closeReportModal()" style="flex:1;background:#fff;color:#0a1931;border:none;padding:14px;border-radius:8px;font-weight:800;">✕ Close</button><button type="button" onclick="emailReport()" style="flex:1;background:#FFD500;color:#000;border:none;padding:14px;border-radius:8px;font-weight:900;">📧 Email Report</button><button type="button" onclick="printReport()" style="flex:1;background:#0a1931;color:#FFD500;border:2px solid #FFD500;padding:14px;border-radius:8px;font-weight:800;">🖨️ Print / PDF</button></div><p style="font-size:8px;color:#666;text-align:center;margin-top:10px;">BUILD 48 - ${compName} - ${compState}/${compCountry}</p>`;
+    
+    document.getElementById('reportModalInner').innerHTML = html;
+    document.getElementById('reportModal').style.display='block';
+    document.getElementById('reportModal').scrollTop=0;
+  }catch(e){
+    showToast('Preview error: '+e.message);
+    console.log(e);
+  }
+}
+function closeReportModal(){ document.getElementById('reportModal').style.display='none'; }
+function getReportHTMLForPrint(){
+  return document.getElementById('reportModalInner').innerHTML;
+}
+function getReportTextForEmail(){
+  const cust = document.getElementById('custName')?.value || 'Client';
+  const addr = document.getElementById('propAddr')?.value || 'Property';
+  const city = document.getElementById('propCity')?.value || '';
+  const state = document.getElementById('propState')?.value || '';
+  const country = document.getElementById('propCountry')?.value || 'USA';
+  const compName = localStorage.getItem('uhri_compName') || 'Home Inspection';
+  const inner = document.getElementById('reportModalInner').innerText;
+  const termsText = document.getElementById('termsBox') ? document.getElementById('termsBox').innerText : '';
+  const clientSig2 = document.getElementById('clientSig')?.value || '';
+  const clientSigDate2 = document.getElementById('clientSigDate')?.value || '';
+  return `Home Inspection Report
+
+Client: ${cust}
+Property: ${addr} ${city}, ${state}, ${country}
+Date: ${new Date().toLocaleDateString()}
+Company: ${compName}
+
+--- REPORT ---
+${inner}
+
+--- PRE-INSPECTION AGREEMENT - FULL - What Client Signed ---
+${termsText}
+
+--- STATEMENT AND ACCEPTANCE 1-8 ---
+Statement 1 - Environmental Hazards: Inspector is not required to inspect for mold, asbestos, lead, radon.
+Statement 2 - Heat Exchanger / Furnace: Not disassembled, visual only.
+Statement 3 - GFCI: May not have been requirement at time of construction.
+Statement 4 - Reinspection: Notify within 7 days, allow reinspection before repairs.
+Statement 5 - Expert: $650/hr if required.
+Statement 6 - Litigation Limited Fee: Liability limited to fee paid. Confidential for client only.
+Statement 7 - Payment Due: Fee $375 Total $375 - No Tax Added - due at inspection. Reinspection $255/hr.
+Statement 8 - Warranty Disclaimer: NOT a warranty, guarantee, or insurance.
+
+--- SIGNATURES ---
+Client Signature: ${clientSig2}
+Date: ${clientSigDate2}
+Fee: $375 Total: $375 - No Tax Added
+
+Full report + Agreement included so client knows what they signed.
+${compName}`;
+}
+function emailReport(){
+  const cust = document.getElementById('custName')?.value || 'Client';
+  const addr = document.getElementById('propAddr')?.value || 'Property';
+  const compName = localStorage.getItem('uhri_compName') || 'Home Inspection';
+  const subject = compName + ' - Inspection Report - ' + addr;
+  const body = getReportTextForEmail();
+  // FIX: mailto: breaks when body > ~2000 chars (full agreement makes it 10k+). So do NOT put full body in mailto.
+  // 1) Try native bridge (iPad app) - can handle long body
+  try {
+    if(window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.email){
+      window.webkit.messageHandlers.email.postMessage({subject: subject, body: body});
+      showToast('📧 Opening Mail app...');
+      return;
+    }
+  } catch(e) {}
+  // 2) Try Web Share (iOS Safari / iPad) - can handle long text, no mailto limit
+  try{
+    if(navigator.share){
+      navigator.share({title: subject, text: body}).then(()=>showToast('Shared!')).catch(()=>{});
+      return;
+    }
+  }catch(e){}
+  // 3) Fallback for WKWebView: Copy full report to clipboard, then open Mail with SUBJECT ONLY (short, no body) so Mail opens, user pastes
+  try{
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(body).then(()=>{
+        showToast('📧 Report copied! Mail opening - Paste into email (Cmd+V)');
+        // Open Mail with subject only - short URL, will not fail
+        try{ window.location.href = 'mailto:?subject=' + encodeURIComponent(subject); }catch(e2){}
+      }).catch(()=>{
+        // Clipboard failed - open Mail with short body note
+        window.location.href = 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('See attached / pasted report. Full report + Agreement included in app Preview > Print to PDF.');
+      });
+      return;
+    }
+  }catch(e){}
+  // Last resort: mailto with short body only
+  window.location.href = 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('Home Inspection Report for ' + addr + '. Full report + Agreement in app Preview > Print to PDF.');
+  showToast('📧 Opening Mail app...');
+}
+function printReport(){
+  const htmlContent = getReportHTMLForPrint();
+  const fullHTML = `<html><head><meta charset="utf-8"><style>body{font-family:-apple-system, sans-serif; padding:20px; font-size:12px;} h1,h2,h3{color:#0a1931;} .report-item{border:1px solid #ddd; padding:6px; margin:4px 0; border-radius:4px;} @media print { button{display:none;} }
+.photo-row{display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap}
+.photo-btn{background:#0a1931;color:#FFD500;border:none;border-radius:10px;padding:16px 24px;font-weight:900;font-size:15px;cursor:pointer;min-height:48px;min-width:100px;touch-action:manipulation;box-shadow:0 2px 4px rgba(0,0,0,0.2)}
+.photo-preview{max-width:80px;max-height:60px;border:1px solid #ccc;border-radius:6px;display:none;cursor:pointer}
+.photo-preview.has-photo{display:block}
+.photo-count{font-size:10px;color:#0a1931;font-weight:700;margin-left:4px}
+
+
+@media (min-width: 768px) {
+  body { font-size: 18px !important; }
+  #appContent { padding: 16px !important; max-width: 1200px !important; margin: 0 auto !important; }
+  .top-bar { min-height: 90px !important; padding: 16px 20px !important; }
+  .room-btn { padding: 24px !important; font-size: 18px !important; min-height: 80px !important; }
+  .photo-btn { padding: 20px 32px !important; font-size: 18px !important; min-height: 60px !important; }
+}
+@media (min-width: 1024px) {
+  #appContent { max-width: 1300px !important; }
+  .room-grid { grid-template-columns: 1fr 1fr 1fr !important; }
+  .room-btn { padding: 28px !important; font-size: 20px !important; min-height: 90px !important; }
+}
+
+</style></head><body>${htmlContent}</body></html>`;
+  
+  // Try native print bridge (iPad app)
+  try {
+    if(window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.print){
+      window.webkit.messageHandlers.print.postMessage(fullHTML);
+      return;
+    }
+  } catch(e) {}
+  
+  // FIX: window.open is blocked in WKWebView (iPad app) and old code called printReport() again = infinite loop. Use iframe print instead.
+  // 1) Try native bridge (iPad app)
+  try {
+    if(window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.print){
+      window.webkit.messageHandlers.print.postMessage(fullHTML);
+      showToast('🖨️ Opening Print / PDF...');
+      return;
+    }
+  } catch(e) {}
+  // 2) Try hidden iframe print - works in WKWebView + Safari, no popup block
+  try{
+    let iframe = document.getElementById('uhriPrintFrame');
+    if(!iframe){
+      iframe = document.createElement('iframe');
+      iframe.id = 'uhriPrintFrame';
+      iframe.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0;';
+      document.body.appendChild(iframe);
+    }
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    doc.open(); doc.write(fullHTML); doc.close();
+    setTimeout(()=>{
+      try{ iframe.contentWindow.focus(); iframe.contentWindow.print(); showToast('🖨️ Print / PDF opened - Choose Save as PDF'); }catch(e2){
+        // If iframe print fails, open report in a modal that user can Share > Print
+        showToast('🖨️ Tap Share > Print in the next screen');
+      }
+    }, 500);
+    return;
+  }catch(e){}
+  // 3) Last resort: show report in new tab via blob (no window.open recursion)
+  try{
+    const blob = new Blob([fullHTML], {type:'text/html'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.textContent = 'Open Report for Print';
+    // Put link in a modal so user can tap it
+    const modal = document.createElement('div');
+    modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10003;display:flex;align-items:center;justify-content:center;padding:20px;';
+    modal.innerHTML = '<div style="background:#fff;border-radius:16px;padding:24px;max-width:400px;width:100%;text-align:center;"><h3>🖨️ Print / PDF</h3><p>Tap below to open the report, then Share > Print > Save as PDF</p></div>';
+    const btn = document.createElement('button');
+    btn.textContent = '📄 Open Report for Print / PDF';
+    btn.style.cssText = 'width:100%;background:#0a1931;color:#FFD500;border:none;padding:16px;border-radius:10px;font-weight:900;font-size:16px;margin-top:12px;';
+    btn.onclick = ()=>{ window.open(url,'_blank'); };
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = 'Close';
+    closeBtn.style.cssText = 'width:100%;background:#fff;color:#0a1931;border:2px solid #0a1931;padding:12px;border-radius:10px;font-weight:800;margin-top:8px;';
+    closeBtn.onclick = ()=>{ modal.remove(); };
+    modal.firstElementChild.appendChild(btn); modal.firstElementChild.appendChild(closeBtn);
+    document.body.appendChild(modal);
+    showToast('🖨️ Tap Open Report for Print');
+  }catch(e){
+    showToast('Print error - Use Preview > Share > Print');
+  }
+}
+
+function shareReport(){ previewReport(); }
+function saveReport(){
+  try{
+    localStorage.setItem('uhri_last_save',new Date().toISOString());
+    let count=0;
+    for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k && k.includes('_status')) count++; }
+    const state=document.getElementById('propState').value || localStorage.getItem('uhri_compState') || 'Universal';
+    const country=document.getElementById('propCountry').value || localStorage.getItem('uhri_compCountry') || 'USA';
+    showToast('💾 SAVED! '+count+' items | '+state+'/'+country+' | '+new Date().toLocaleTimeString()+'\nYou can now Preview + Email');
+  }catch(e){
+    showToast('Save error: '+e.message);
+  }
+}
+
+document.getElementById('propState').addEventListener('change', updateAgreementLabels);
+document.getElementById('propCountry').addEventListener('change', updateAgreementLabels);
+document.getElementById('compState').addEventListener('change', updateAgreementLabels);
+document.getElementById('compCountry').addEventListener('change', updateAgreementLabels);
+document.getElementById('compStandard').addEventListener('change', updateAgreementLabels);
+
+document.querySelector('.agreement-header').addEventListener('dblclick',closeAgreement);
+if(localStorage.getItem('uhri_agreement_signed') || localStorage.getItem('uhri_agreement_skipped')){minimizeAgreement();}
+window.addEventListener('load',function(){
+  const savedName=localStorage.getItem('uhri_compName');
+  if(savedName) document.getElementById('topCompanyName').innerText=savedName;
+  const savedPhone=localStorage.getItem('uhri_compPhone');
+  if(savedPhone) document.getElementById('topPhone').innerText=savedPhone;
+  const savedLogo=localStorage.getItem('uhri_company_logo');
+  if(savedLogo) updateLogoDisplay(savedLogo);
+  updateAgreementLabels();
+  const now=new Date().toISOString().split('T')[0];
+  const dateEl=document.getElementById('propDate');
+  if(dateEl && !dateEl.value) dateEl.value=now;
+});
+</script>
 </body>
 </html>
